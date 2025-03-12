@@ -1,0 +1,55 @@
+.title {
+  font-size: 22px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.09em;
+}
+
+.subtitle {
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.12em;
+}
+
+.nav-inactive {
+  font-size: 18px;
+  line-height: 22px;
+  color: #655653;
+}
+
+.nav-inactive:hover {
+  font-weight: 600;
+  color: #c49a6c;
+}
+
+.nav-active {
+  font-size: 18px;
+  line-height: 22px;
+  color: #c49a6c;
+  position: relative;
+}
+
+.nav-active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 2px;
+  background-color: #c49a6c;
+}
+
+.btn {
+  width: 150px;
+  height: 44px;
+}
+
+.btn-text {
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}

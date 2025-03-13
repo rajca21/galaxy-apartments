@@ -18,6 +18,7 @@ export default {
           smoke: '#f4f1f6',
           nav: '#f5f5f5',
           text: '#fefefe',
+          copyright: '#c6c0ba',
         },
       },
     },

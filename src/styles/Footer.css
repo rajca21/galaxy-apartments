@@ -1,0 +1,36 @@
+.link-text {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.contact-headline {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.contact-text {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.logo-title {
+  font-size: 36px;
+  line-height: 18px;
+  letter-spacing: 0.09em;
+}
+
+.logo-subtitle {
+  font-size: 22px;
+  line-height: 18px;
+  letter-spacing: 0.12em;
+}
+
+.follow-us {
+  font-size: 16px;
+  line-height: 20px;
+}

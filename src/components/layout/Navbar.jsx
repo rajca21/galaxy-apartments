@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { IoMdMenu, IoMdClose } from 'react-icons/io';
 import { MdLanguage } from 'react-icons/md';
 
@@ -13,10 +13,12 @@ const Navbar = () => {
       <div className='h-20 my-auto bg-gray-nav'>
         {/* Desktop navigation */}
         <div className='mx-[100px] 2xl:mx-[250px] hidden lg:flex justify-between items-center h-full'>
-          <h1 className='font-montserrat-semibold  text-primary-dark flex flex-col'>
-            <span className='title uppercase'>Galaxy</span>
-            <span className='subtitle'>Apartments</span>
-          </h1>
+          <Link to='/'>
+            <h1 className='font-montserrat-semibold  text-primary-dark flex flex-col'>
+              <span className='title uppercase'>Galaxy</span>
+              <span className='subtitle'>Apartments</span>
+            </h1>
+          </Link>
 
           <nav className='flex flex-row gap-10'>
             <NavLink
@@ -69,20 +71,24 @@ const Navbar = () => {
         <div className='relative lg:hidden h-full  '>
           <div className='flex items-center justify-between mx-[20px] sm:mx-[40px] h-full'>
             <div className='cursor-pointer'>
-              <MdLanguage size={24} />
+              <MdLanguage aria-label='language-icon' size={24} />
             </div>
-            <h1 className='font-montserrat-semibold  text-primary-dark flex flex-col'>
-              <span className='title uppercase'>Galaxy</span>
-              <span className='subtitle'>Apartments</span>
-            </h1>
+            <Link to='/'>
+              <h1 className='font-montserrat-semibold  text-primary-dark flex flex-col'>
+                <span className='title uppercase'>Galaxy</span>
+                <span className='subtitle'>Apartments</span>
+              </h1>
+            </Link>
             {mobileMenuOpen ? (
               <IoMdClose
+                aria-label='close-icon'
                 className='cursor-pointer text-primary-dark'
                 onClick={() => setMobileMenuOpen(false)}
                 size={26}
               />
             ) : (
               <IoMdMenu
+                aria-label='burger-menu-icon'
                 className='cursor-pointer text-primary-dark'
                 onClick={() => setMobileMenuOpen(true)}
                 size={26}

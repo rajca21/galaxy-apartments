@@ -95,10 +95,12 @@ const Footer = () => {
 
           {/* Logo */}
           <div className='flex-1 flex flex-col justify-between items-end'>
-            <h1 className='font-montserrat-semibold text-gray-text hidden md:flex flex-col gap-2'>
-              <span className='logo-title uppercase'>Galaxy</span>
-              <span className='logo-subtitle'>Apartments</span>
-            </h1>
+            <Link to='/'>
+              <h1 className='font-montserrat-semibold text-gray-text hidden md:flex flex-col gap-2'>
+                <span className='logo-title uppercase'>Galaxy</span>
+                <span className='logo-subtitle'>Apartments</span>
+              </h1>
+            </Link>
 
             <div className='w-[164px]'>
               <h3 className='font-montserrat-medium follow-us text-gray-text pb-2'>
@@ -143,7 +145,7 @@ const Footer = () => {
         </div>
 
         {/* Mobile Footer */}
-        <div className='flex md:hidden flex-col justify-center items-center gap-10'>
+        <div className='flex md:hidden flex-col gap-10 mx-[30px]'>
           <div className='flex flex-col gap-[30px]'>
             <a
               href='tel:+381603630200'
@@ -224,6 +226,9 @@ const Footer = () => {
               <img src={icons.booking} alt='booking-icon' />
             </a>
           </div>
+          <p className='font-montserrat-medium copyright text-gray-copyright text-right'>
+            &copy; 2025. All rights reserved.
+          </p>
         </div>
       </div>
     </>

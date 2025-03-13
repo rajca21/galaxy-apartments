@@ -16,6 +16,8 @@ export default {
         secondary: {
           DEFAULT: '#c49a6c',
           light: '#e3c5a8',
+          dark: '#655653',
+          400: "#c3b5a6"
         },
         gray: {
           smoke: '#f4f1f6',

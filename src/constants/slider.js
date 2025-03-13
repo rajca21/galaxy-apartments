@@ -1,10 +1,10 @@
-import desktopSlider1 from '../assets/slider/slider1.png';
-import desktopSlider2 from '../assets/slider/slider2.png';
-import desktopSlider3 from '../assets/slider/slider3.png';
-import desktopSlider4 from '../assets/slider/slider4.png';
-import desktopSlider5 from '../assets/slider/slider5.png';
-import desktopSlider6 from '../assets/slider/slider6.png';
-import desktopSlider7 from '../assets/slider/slider7.png';
+import desktopSlider1 from '../assets/slider/slider1.svg';
+import desktopSlider2 from '../assets/slider/slider2.svg';
+import desktopSlider3 from '../assets/slider/slider3.svg';
+import desktopSlider4 from '../assets/slider/slider4.svg';
+import desktopSlider5 from '../assets/slider/slider5.svg';
+import desktopSlider6 from '../assets/slider/slider6.svg';
+import desktopSlider7 from '../assets/slider/slider7.svg';
 
 export default {
   desktopSlider1,

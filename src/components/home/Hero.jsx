@@ -43,7 +43,7 @@ const Hero = () => {
       </AnimatePresence>
 
       {/* Overlay */}
-      <div className='absolute inset-0 bg-[rgba(35,36,42,0.45)] h-full flex flex-col justify-center px-[20px] sm:px-[40px] lg:px-[100px] 2xl:px-[250px]'>
+      <div className='absolute inset-0 h-full flex flex-col justify-center px-[20px] sm:px-[40px] lg:px-[100px] 2xl:px-[250px]'>
         <div className='flex flex-row gap-1'>
           <IoStarSharp
             aria-label='star-icon'
@@ -71,7 +71,7 @@ const Hero = () => {
             size={20}
           />
         </div>
-        <p className='font-montserrat-semibold text-secondary-light rated-text pt-[14px]'>
+        <p className='font-montserrat-semibold text-secondary-400 rated-text pt-[14px]'>
           Rated 5 stars by customers
         </p>
         <h2 className='playfair-display-semibold text-gray-text hero-title pt-[39px]'>
@@ -79,7 +79,7 @@ const Hero = () => {
         </h2>
         <Link
           to='/apartments'
-          className='rounded-full hover:bg-primary-dark bg-primary text-gray-text btn btn-text font-montserrat-semibold flex items-center justify-center mt-[39px]'
+          className='rounded-full hover:bg-secondary bg-primary text-gray-text btn btn-text font-montserrat-semibold flex items-center justify-center mt-[39px]'
         >
           Explore
         </Link>

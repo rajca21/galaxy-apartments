@@ -10,6 +10,12 @@
   padding: 0;
 }
 
+.font-montserrat-light {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 .font-montserrat-normal {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -31,5 +37,11 @@
 .playfair-display-semibold {
   font-family: 'Playfair Display', serif;
   font-weight: 600;
+  font-style: normal;
+}
+
+.playfair-display-bold {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
   font-style: normal;
 }

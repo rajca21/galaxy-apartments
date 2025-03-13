@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { IoMdMenu, IoMdClose } from 'react-icons/io';
+import { IoMdClose } from 'react-icons/io';
 import { MdLanguage } from 'react-icons/md';
 
 import '../../styles/Navbar.css';
+import icons from '../../constants/icons';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -62,16 +63,21 @@ const Navbar = () => {
               About us
             </NavLink>
           </nav>
-          <button className='rounded-full hover:bg-primary-dark bg-primary text-gray-text btn btn-text font-montserrat-semibold flex items-center justify-center'>
+          <button className='rounded-full hover:bg-secondary bg-primary text-gray-text btn btn-text font-montserrat-semibold flex items-center justify-center'>
             Book Now
           </button>
         </div>
 
         {/* Mobile Navigation */}
-        <div className='relative lg:hidden h-full  '>
+        <div className='relative lg:hidden h-full'>
           <div className='flex items-center justify-between mx-[20px] sm:mx-[40px] h-full'>
-            <div className='cursor-pointer'>
-              <MdLanguage aria-label='language-icon' size={24} />
+            <div className='w-10 flex justify-start cursor-pointer'>
+              <img
+                src={icons.language}
+                alt='language-icon'
+                className='cursor-pointer text-primary-dark h-8'
+                onClick={() => setMobileMenuOpen(false)}
+              />
             </div>
             <Link to='/'>
               <h1 className='font-montserrat-semibold  text-primary-dark flex flex-col'>
@@ -80,19 +86,23 @@ const Navbar = () => {
               </h1>
             </Link>
             {mobileMenuOpen ? (
-              <IoMdClose
-                aria-label='close-icon'
-                className='cursor-pointer text-primary-dark'
-                onClick={() => setMobileMenuOpen(false)}
-                size={26}
-              />
+              <div className='w-10 flex justify-end pr-1'>
+                <img
+                  src={icons.close}
+                  alt='close-icon'
+                  className='cursor-pointer text-primary-dark'
+                  onClick={() => setMobileMenuOpen(false)}
+                />
+              </div>
             ) : (
-              <IoMdMenu
-                aria-label='burger-menu-icon'
-                className='cursor-pointer text-primary-dark'
-                onClick={() => setMobileMenuOpen(true)}
-                size={26}
-              />
+              <div className='w-10 flex justify-end'>
+                <img
+                  src={icons.menu}
+                  alt='burger-menu-icon'
+                  className='cursor-pointer'
+                  onClick={() => setMobileMenuOpen(true)}
+                />
+              </div>
             )}
           </div>
           {mobileMenuOpen && (

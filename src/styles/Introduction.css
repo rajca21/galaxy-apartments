@@ -1,0 +1,19 @@
+.welcome-title {
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.welcome-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.review-number {
+  font-size: 32px;
+  line-height: 28px;
+  padding-top: 8px;
+}
+
+.review-text {
+  font-size: 16px;
+}

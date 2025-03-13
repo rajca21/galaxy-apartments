@@ -118,6 +118,7 @@ const Footer = () => {
                   href='https://wa.me/381603630200'
                   target='_blank'
                   rel='noopener noreferrer'
+                  className='pl-[6px]'
                 >
                   <img
                     src={icons.whatsapp}
@@ -129,6 +130,7 @@ const Footer = () => {
                   href='https://www.instagram.com/galaxy_apartments_/'
                   target='_blank'
                   rel='noopener noreferrer'
+                  className='pl-[4px]'
                 >
                   <img src={icons.instagram} alt='instagram-icon' />
                 </a>

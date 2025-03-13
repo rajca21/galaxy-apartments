@@ -147,7 +147,7 @@ const Footer = () => {
         </div>
 
         {/* Mobile Footer */}
-        <div className='flex md:hidden flex-col gap-10 mx-[30px]'>
+        <div className='flex md:hidden flex-col mx-[30px]'>
           <div className='flex flex-col gap-[30px]'>
             <a
               href='tel:+381603630200'
@@ -194,21 +194,22 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className='flex flex-row items-center gap-2'>
+          <div className='flex flex-row items-center gap-2 pt-14'>
             <a
               href='viber://chat/?number=%2B381603630200'
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img src={icons.viber} alt='viber-icon' />
+              <img src={icons.viber_mobile} alt='viber-icon' />
             </a>
             <a
               href='https://wa.me/381603630200'
               target='_blank'
               rel='noopener noreferrer'
+              className='pl-[6px]'
             >
               <img
-                src={icons.whatsapp}
+                src={icons.whatsapp_mobile}
                 alt='whatsapp-icon'
                 className='size-[24px]'
               />
@@ -217,20 +218,21 @@ const Footer = () => {
               href='https://www.instagram.com/galaxy_apartments_/'
               target='_blank'
               rel='noopener noreferrer'
+              className='pl-[4px]'
             >
-              <img src={icons.instagram} alt='instagram-icon' />
+              <img src={icons.instagram_mobile} alt='instagram-icon' />
             </a>
             <a
               href='https://www.booking.com/hotel/rs/galaxy.sr.html'
               target='_blank'
               rel='noopener noreferrer'
             >
-              <img src={icons.booking} alt='booking-icon' />
+              <img src={icons.booking_mobile} alt='booking-icon' />
             </a>
           </div>
-          <p className='font-montserrat-medium copyright text-gray-copyright text-right'>
+          <span className='font-montserrat-medium copyright text-gray-copyright pt-4'>
             &copy; 2025. All rights reserved.
-          </p>
+          </span>
         </div>
       </div>
     </>

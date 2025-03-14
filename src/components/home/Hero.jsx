@@ -16,6 +16,16 @@ const sliderImages = [
   slider.desktopSlider7,
 ];
 
+const mediumSliderImages = [
+  slider.mediumSlider1,
+  slider.mediumSlider2,
+  slider.mediumSlider3,
+  slider.mediumSlider4,
+  slider.mediumSlider5,
+  slider.mediumSlider6,
+  slider.mediumSlider7,
+];
+
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -33,6 +43,8 @@ const Hero = () => {
         <motion.img
           key={sliderImages[currentIndex]}
           src={sliderImages[currentIndex]}
+          srcSet={`${mediumSliderImages[currentIndex]} 1280w, ${sliderImages[currentIndex]} 1920w`}
+          sizes='(max-width: 1280px) 100vw, 1920px'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

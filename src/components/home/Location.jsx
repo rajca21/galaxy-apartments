@@ -83,11 +83,20 @@ const Location = () => {
             rel='noopener noreferrer'
             className='flex-1 flex justify-center lg:justify-end mt-10 lg:mt-0'
           >
-            <img
-              src={images.map}
-              alt='vojvodjanska-481-pinpoint'
-              className='w-full h-[300px] sm:h-[400px] lg:h-full object-cover'
-            />
+            <picture>
+              {/* Small Screens (Below 640px - sm) */}
+              <source srcSet={images.map_small} media='(max-width: 639px)' />
+
+              {/* Medium Screens (640px - 1023px) */}
+              <source srcSet={images.map_medium} media='(max-width: 1023px)' />
+
+              {/* Default (Large Screens - Above 1024px) */}
+              <img
+                src={images.map}
+                alt='vojvodjanska-481-pinpoint'
+                className='w-full h-[300px] sm:h-[400px] lg:h-full object-cover'
+              />
+            </picture>
           </a>
         </div>
       </SectionLayout>

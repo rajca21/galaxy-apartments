@@ -1,3 +1,5 @@
+import images from '../constants/images';
+
 const Apartment = () => {
   return (
     <div className='h-[calc(100vh-80px)] bg-primary w-full flex flex-col gap-2 items-center justify-center'>

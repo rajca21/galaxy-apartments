@@ -77,13 +77,18 @@ const Location = () => {
             </a>
           </div>
           {/* Map */}
-          <div className='flex-1 flex justify-center lg:justify-end mt-10 lg:mt-0'>
+          <a
+            href='https://www.google.com/maps/dir/?api=1&destination=Vojvođanska+448,+Surčin+11271'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='flex-1 flex justify-center lg:justify-end mt-10 lg:mt-0'
+          >
             <img
               src={images.map}
               alt='vojvodjanska-481-pinpoint'
               className='w-full h-[300px] sm:h-[400px] lg:h-full object-cover'
             />
-          </div>
+          </a>
         </div>
       </SectionLayout>
     </>

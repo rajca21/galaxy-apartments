@@ -1,0 +1,60 @@
+.heading {
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.room-title {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.room-description {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.swiper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  color: #8a728e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev {
+  left: -60px;
+}
+
+.swiper-button-next {
+  right: -60px;
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  border: 2px #8a728e solid;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #8a728e;
+  width: 15px;
+  height: 15px;
+}

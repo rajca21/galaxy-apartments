@@ -3,6 +3,7 @@ import Introduction from '../components/home/Introduction';
 import GuestReviews from '../components/home/GuestReviews';
 import Location from '../components/home/Location';
 import Facilities from '../components/home/Facilities';
+import ApartmentsSection from '../components/home/ApartmentsSection';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <GuestReviews />
       <Location />
       <Facilities />
+      <ApartmentsSection />
     </>
   );
 };

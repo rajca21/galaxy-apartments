@@ -4,6 +4,7 @@ import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Apartments from './pages/Apartments';
+import Apartment from './pages/Apartment';
 import AboutUs from './pages/AboutUs';
 
 function App() {
@@ -32,6 +33,14 @@ function App() {
             element={
               <Layout>
                 <Apartments />
+              </Layout>
+            }
+          />
+          <Route
+            path='/apartments/:slug'
+            element={
+              <Layout>
+                <Apartment />
               </Layout>
             }
           />

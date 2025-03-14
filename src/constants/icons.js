@@ -8,6 +8,8 @@ import language from '../assets/icons/language.svg';
 import location from '../assets/icons/location.svg';
 import mail from '../assets/icons/mail.svg';
 import menu from '../assets/icons/menu.svg';
+import star_purple from '../assets/icons/star_purple.svg';
+import star_purple_outline from '../assets/icons/star_purple_outline.svg';
 import viber from '../assets/icons/viber.svg';
 import viber_mobile from '../assets/icons/viber_mobile.svg';
 import whatsapp from '../assets/icons/whatsapp.svg';
@@ -24,6 +26,8 @@ export default {
   location,
   mail,
   menu,
+  star_purple,
+  star_purple_outline,
   viber,
   viber_mobile,
   whatsapp,

@@ -40,7 +40,7 @@ const Counter = ({ value }) => {
 const Introduction = () => {
   return (
     <>
-      <SectionLayout>
+      <SectionLayout bgColor={'bg-gray-nav'}>
         <div className='flex flex-col lg:flex-row lg:gap-32 items-center'>
           {/* Welcome Message */}
           <div className='flex-1'>

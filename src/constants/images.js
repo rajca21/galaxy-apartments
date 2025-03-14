@@ -1,3 +1,4 @@
+import build from '../assets/images/build.gif';
 import introduction from '../assets/images/introduction.svg';
 import map from '../assets/images/map.png';
 import map_medium from '../assets/images/map_medium.png';
@@ -8,6 +9,7 @@ import user3 from '../assets/images/user3.svg';
 import user4 from '../assets/images/user4.svg';
 
 export default {
+  build,
   introduction,
   map,
   map_medium,

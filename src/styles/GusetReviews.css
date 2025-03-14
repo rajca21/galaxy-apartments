@@ -12,3 +12,50 @@
   font-size: 14px;
   line-height: 16px;
 }
+
+.reviews .swiper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.reviews .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews .swiper-button-prev,
+.reviews .swiper-button-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  color: #8a728e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews .swiper-button-prev {
+  left: -60px;
+}
+
+.reviews .swiper-button-next {
+  right: -60px;
+}
+
+.reviews .swiper-pagination-bullet {
+  background-color: #f5f5f5;
+  opacity: 1;
+  width: 15px;
+  height: 15px;
+  border: 2px #f5f5f5 solid;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.reviews .swiper-pagination-bullet-active {
+  background-color: #c6c0ba;
+  width: 15px;
+  height: 15px;
+}

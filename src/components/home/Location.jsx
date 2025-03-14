@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import '../../styles/Location.css';
 import icons from '../../constants/icons';
 import SectionLayout from '../layout/SectionLayout';
@@ -7,7 +9,13 @@ const Location = () => {
   return (
     <>
       <SectionLayout bgColor={'bg-gray-nav'}>
-        <div className='flex flex-col lg:flex-row lg:justify-between'>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 0.2 }}
+          className='flex flex-col lg:flex-row lg:justify-between'
+        >
           {/* Location */}
           <div className='flex-1'>
             <h2 className='playfair-display-bold heading text-primary-dark'>
@@ -98,7 +106,7 @@ const Location = () => {
               />
             </picture>
           </a>
-        </div>
+        </motion.div>
       </SectionLayout>
     </>
   );

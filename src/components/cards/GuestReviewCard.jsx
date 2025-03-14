@@ -64,30 +64,33 @@ const Stars = ({ reviewStars }) => {
   }
 };
 
-const GuestReviewCard = ({ userReview, index }) => {
+const GuestReviewCard = ({ userReview }) => {
   return (
-    <div className='bg-gray-text rounded-[10px] w-[255px]'>
+    <div className='bg-transparent w-[255px] h-full'>
       <div className='flex flex-col items-center w-full'>
-        <div className='border-white border-4 -mt-[45px] rounded-full'>
-          <img
-            src={userReview.image}
-            alt={userReview.user}
-            className='size-[90px] rounded-full '
-          />
-        </div>
+        <div className='h-[45px] bg-gray-copyright w-full'></div>
+        <div className='flex flex-col items-center w-full rounded-[10px] bg-gray-text'>
+          <div className='border-white border-4 -mt-[45px] rounded-full'>
+            <img
+              src={userReview.image}
+              alt={userReview.user}
+              className='size-[90px] rounded-full'
+            />
+          </div>
 
-        <div className='pt-[10px]'>
-          <Stars reviewStars={userReview.stars} />
-        </div>
+          <div className='pt-[10px]'>
+            <Stars reviewStars={userReview.stars} />
+          </div>
 
-        <p className='pt-[15px] px-[24px] line-clamp-6 font-montserrat-normal review-text text-primary-dark'>
-          {userReview.review}
-        </p>
-
-        <div className='w-full flex justify-start py-[24px] px-[24px]'>
-          <p className='font-montserrat-semibold review-user text-primary'>
-            {userReview.user}
+          <p className='pt-[15px] px-[24px] line-clamp-6 font-montserrat-normal review-text text-primary-dark'>
+            {userReview.review}
           </p>
+
+          <div className='w-full flex justify-start py-[24px] px-[24px]'>
+            <p className='font-montserrat-semibold review-user text-primary'>
+              {userReview.user}
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -43,7 +43,13 @@ const Introduction = () => {
       <SectionLayout bgColor={'bg-gray-nav'}>
         <div className='flex flex-col lg:flex-row lg:gap-32 items-center'>
           {/* Welcome Message */}
-          <div className='flex-1'>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            viewport={{ once: true, amount: 0.2 }}
+            className='flex-1'
+          >
             <h2 className='playfair-display-bold welcome-title text-primary-dark'>
               Welcome to <br /> Galaxy Apartments
             </h2>
@@ -58,9 +64,15 @@ const Introduction = () => {
             >
               About us
             </Link>
-          </div>
+          </motion.div>
           {/* Image & Reviews */}
-          <div className='flex-1 w-full flex justify-end'>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            viewport={{ once: true, amount: 0.2 }}
+            className='flex-1 w-full flex justify-end'
+          >
             <div className='hidden md:flex relative'>
               <img src={images.introduction} />
               <div className='absolute bg-primary w-[250px] h-[100px] bottom-16 -left-10'>
@@ -80,7 +92,7 @@ const Introduction = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </SectionLayout>
     </>

@@ -63,7 +63,7 @@ const Navbar = () => {
               About us
             </NavLink>
           </nav>
-          <button className='rounded-full hover:bg-secondary bg-primary text-gray-text btn btn-text font-montserrat-semibold flex items-center justify-center'>
+          <button className='rounded-full hover:bg-secondary bg-primary text-gray-text btn btn-text font-montserrat-semibold flex items-center justify-center transition-all duration-300'>
             Book Now
           </button>
         </div>

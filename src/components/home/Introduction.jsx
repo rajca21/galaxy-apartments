@@ -60,7 +60,7 @@ const Introduction = () => {
             </p>
             <Link
               to='/about-us'
-              className='rounded-full hover:bg-secondary bg-primary text-gray-text btn btn-text font-montserrat-semibold flex items-center justify-center mt-[39px]'
+              className='rounded-full hover:bg-secondary bg-primary text-gray-text btn btn-text font-montserrat-semibold flex items-center justify-center mt-[39px] transition-all duration-300'
             >
               About us
             </Link>

@@ -17,7 +17,7 @@ const RoomHomeCard = ({ room }) => {
         </div>
         <Link
           to={`/apartments/${room.slug}`}
-          className='rounded-full hover:bg-secondary bg-primary text-gray-text btn btn-text font-montserrat-semibold flex items-center justify-center'
+          className='rounded-full hover:bg-secondary bg-primary text-gray-text btn btn-text font-montserrat-semibold flex items-center justify-center transition-all duration-300'
         >
           View
         </Link>

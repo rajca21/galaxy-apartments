@@ -68,7 +68,7 @@ const Location = () => {
             </div>
 
             {/* Address */}
-            <p className='pt-[20px] font-montserrat-bold address-title text-secondary-dark'>
+            <p className='pt-[22px] font-montserrat-bold address-title text-secondary-dark'>
               Address
             </p>
             <p className='pt-[16px] font-montserrat-normal address-text text-secondary-dark'>
@@ -79,7 +79,7 @@ const Location = () => {
               href='https://www.google.com/maps/dir/?api=1&destination=Vojvođanska+448,+Surčin+11271'
               target='_blank'
               rel='noopener noreferrer'
-              className='rounded-full hover:bg-secondary bg-primary text-gray-text btn btn-text font-montserrat-semibold flex items-center justify-center mt-[36px]'
+              className='rounded-full hover:bg-secondary bg-primary text-gray-text btn btn-text font-montserrat-semibold flex items-center justify-center transition-all duration-300 mt-[36px]'
             >
               Map
             </a>

@@ -7,7 +7,6 @@ import '../../styles/Hero.css';
 import slider from '../../constants/slider';
 
 const sliderImages = [
-  slider.desktopSlider1,
   slider.desktopSlider2,
   slider.desktopSlider3,
   slider.desktopSlider4,
@@ -17,7 +16,6 @@ const sliderImages = [
 ];
 
 const mediumSliderImages = [
-  slider.mediumSlider1,
   slider.mediumSlider2,
   slider.mediumSlider3,
   slider.mediumSlider4,

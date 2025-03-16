@@ -91,7 +91,7 @@ const Location = () => {
             rel='noopener noreferrer'
             className='flex-1 flex justify-center lg:justify-end mt-10 lg:mt-0'
           >
-            <picture>
+            <picture className='w-full'>
               {/* Small Screens (Below 640px - sm) */}
               <source srcSet={images.map_small} media='(max-width: 639px)' />
 

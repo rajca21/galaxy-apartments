@@ -41,7 +41,7 @@ const Introduction = () => {
   return (
     <>
       <SectionLayout bgColor={'bg-gray-nav'}>
-        <div className='flex flex-col lg:flex-row lg:gap-32 items-center'>
+        <div className='flex flex-col lg:flex-row gap-12 xl:gap-32 items-center'>
           {/* Welcome Message */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -73,9 +73,9 @@ const Introduction = () => {
             viewport={{ once: true, amount: 0.2 }}
             className='flex-1 w-full flex justify-end'
           >
-            <div className='hidden md:flex relative'>
-              <img src={images.introduction} />
-              <div className='absolute bg-primary w-[250px] h-[100px] bottom-16 -left-10'>
+            <div className='flex relative w-full'>
+              <img src={images.introduction} alt='hallway' className='w-full' />
+              <div className='hidden xl:flex absolute bg-primary w-[250px] h-[100px] bottom-16 -left-10'>
                 <div className='w-full h-full flex flex-row justify-between items-center'>
                   <div className='flex flex-col w-full h-full justify-center items-center flex-1'>
                     <Counter value={984} />

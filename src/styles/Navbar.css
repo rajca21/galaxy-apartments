@@ -11,7 +11,14 @@
   line-height: 18px;
   display: flex;
   align-items: center;
+}
+
+.subtitle-letter-space-en {
   letter-spacing: 0.12em;
+}
+
+.subtitle-letter-space-sr {
+  letter-spacing: 0.2em;
 }
 
 .nav-inactive {

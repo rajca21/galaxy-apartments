@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { IoStarSharp } from 'react-icons/io5';
 
 import '../../styles/Hero.css';
@@ -25,6 +26,8 @@ const mediumSliderImages = [
 ];
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -88,16 +91,16 @@ const Hero = () => {
           />
         </div>
         <p className='font-montserrat-semibold text-secondary-400 rated-text pt-[14px]'>
-          Rated 5 stars by customers
+          {t('hero_rated')}
         </p>
-        <h2 className='playfair-display-semibold text-gray-text hero-title pt-[39px]'>
-          Discover Your <br /> Perfect Apartment
+        <h2 className='capitalize playfair-display-semibold text-gray-text hero-title pt-[39px]'>
+          {t('hero_title_1')} <br /> {t('hero_title_2')}
         </h2>
         <Link
           to='/apartments'
           className='rounded-full hover:bg-secondary bg-primary text-gray-text btn btn-text font-montserrat-semibold flex items-center justify-center mt-[39px] transition-all duration-300'
         >
-          Explore
+          {t('hero_explore')}
         </Link>
       </motion.div>
     </div>

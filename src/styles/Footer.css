@@ -33,7 +33,14 @@
 .logo-subtitle {
   font-size: 22px;
   line-height: 18px;
+}
+
+.logo-subtitle-letter-spacing-en {
   letter-spacing: 0.12em;
+}
+
+.logo-subtitle-letter-spacing-sr {
+  letter-spacing: 0.2em;
 }
 
 .follow-us {

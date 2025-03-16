@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import '../../styles/Footer.css';
 import icons from '../../constants/icons';
 
 const Footer = () => {
+  const { i18n, t } = useTranslation();
+
   return (
     <>
       <div className='sm:px-[100px] 2xl:px-[250px] bg-primary-dark pt-[72px] pb-[41px] w-full'>
@@ -15,36 +18,36 @@ const Footer = () => {
               className='font-montserrat-normal link-text text-gray-text hover:text-secondary'
               to='/'
             >
-              Home
+              {t('footer_menu_home')}
             </Link>
             <Link
               className='font-montserrat-normal link-text text-gray-text hover:text-secondary'
               to='/apartments'
             >
-              Apartments
+              {t('footer_menu_apartments')}
             </Link>
             <Link
               className='font-montserrat-normal link-text text-gray-text hover:text-secondary'
               to='/contact'
             >
-              Contact
+              {t('footer_menu_contact')}
             </Link>
             <Link
               className='font-montserrat-normal link-text text-gray-text hover:text-secondary'
               to='/about-us'
             >
-              About us
+              {t('footer_menu_about_us')}
             </Link>
 
             <p className='pt-[30px] font-montserrat-medium copyright text-gray-copyright'>
-              &copy; 2025. All rights reserved.
+              &copy; 2025 ANS | {t('footer_copyright')}
             </p>
           </div>
 
           {/* Contact */}
           <div className='flex-1 text-left'>
             <h2 className='font-montserrat-semibold contact-headline text-gray-text'>
-              Contact
+              {t('footer_menu_contact')}
             </h2>
             <div className='flex flex-col gap-[30px] mt-[30px]'>
               <a
@@ -96,15 +99,23 @@ const Footer = () => {
           {/* Logo */}
           <div className='flex-1 flex flex-col justify-between items-end'>
             <Link to='/'>
-              <h1 className='font-montserrat-semibold text-gray-text hidden md:flex flex-col gap-2'>
+              <h1 className='font-montserrat-semibold text-gray-text hidden md:flex flex-col gap-3 text-center'>
                 <span className='logo-title uppercase'>Galaxy</span>
-                <span className='logo-subtitle'>Apartments</span>
+                <span
+                  className={`logo-subtitle ${
+                    i18n.language === 'sr'
+                      ? 'logo-subtitle-letter-spacing-sr'
+                      : 'logo-subtitle-letter-spacing-en'
+                  }`}
+                >
+                  {t('footer_menu_apartments')}
+                </span>
               </h1>
             </Link>
 
             <div className='w-[164px]'>
               <h3 className='font-montserrat-medium follow-us text-gray-text pb-2'>
-                Follow us
+                {t('footer_follow_us')}
               </h3>
               <div className='flex flex-row items-center gap-2'>
                 <a
@@ -231,7 +242,7 @@ const Footer = () => {
             </a>
           </div>
           <span className='font-montserrat-medium copyright text-gray-copyright pt-4'>
-            &copy; 2025. All rights reserved.
+            &copy; 2025 ANS | {t('footer_copyright')}
           </span>
         </div>
       </div>

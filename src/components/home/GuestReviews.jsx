@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -11,6 +12,8 @@ import SectionLayout from '../layout/SectionLayout';
 import GuestReviewCard from '../cards/GuestReviewCard';
 
 const GuestReviews = () => {
+  const { t } = useTranslation();
+
   return (
     <div className='reviews'>
       <SectionLayout bgColor={'bg-gray-copyright'}>
@@ -21,7 +24,7 @@ const GuestReviews = () => {
           viewport={{ once: true, amount: 0.2 }}
           className='text-center heading playfair-display-bold text-white'
         >
-          Guest reviews
+          {t('review_title')}
         </motion.h2>
         <motion.div
           initial={{ opacity: 0, y: 50 }}

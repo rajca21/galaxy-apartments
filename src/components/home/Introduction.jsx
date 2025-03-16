@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 import '../../styles/Introduction.css';
 import SectionLayout from '../layout/SectionLayout';
@@ -38,6 +39,8 @@ const Counter = ({ value }) => {
 };
 
 const Introduction = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <SectionLayout bgColor={'bg-gray-nav'}>
@@ -51,18 +54,16 @@ const Introduction = () => {
             className='flex-1'
           >
             <h2 className='playfair-display-bold welcome-title text-primary-dark'>
-              Welcome to <br /> Galaxy Apartments
+              {t('intro_welcome_1')} <br /> {t('intro_welcome_2')}
             </h2>
             <p className='pt-[40px] font-montserrat-normal welcome-text text-secondary-dark'>
-              Discover our user-friendly platform designed for simplicity and
-              ease of use, showcasing beautiful apartments with essential
-              information for your convenience.
+              {t('intro_description')}
             </p>
             <Link
               to='/about-us'
               className='rounded-full hover:bg-secondary bg-primary text-gray-text btn btn-text font-montserrat-semibold flex items-center justify-center mt-[39px] transition-all duration-300'
             >
-              About us
+              {t('intro_about_us')}
             </Link>
           </motion.div>
           {/* Image & Reviews */}
@@ -80,13 +81,13 @@ const Introduction = () => {
                   <div className='flex flex-col w-full h-full justify-center items-center flex-1'>
                     <Counter value={984} />
                     <span className='font-montserrat-light text-white review-text'>
-                      Reviews
+                      {t('intro_reviews')}
                     </span>
                   </div>
                   <div className='flex flex-col justify-center items-center flex-1'>
-                    <Counter value={9.1} />
+                    <Counter value={9.2} />
                     <span className='font-montserrat-light text-white review-text'>
-                      Rating
+                      {t('intro_rating')}
                     </span>
                   </div>
                 </div>

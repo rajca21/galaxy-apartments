@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -11,11 +12,13 @@ import SectionLayout from '../layout/SectionLayout';
 import RoomHomeCard from '../cards/RoomHomeCard';
 
 const ApartmentsSection = () => {
+  const { t } = useTranslation();
+
   return (
     <div className='apartments'>
       <SectionLayout bgColor={'bg-gray-nav'}>
         <h2 className='text-center heading playfair-display-bold text-primary-dark pb-[65px]'>
-          Apartments
+          {t('apartments_section_title')}
         </h2>
 
         <motion.div

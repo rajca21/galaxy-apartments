@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import '../../styles/ApartmentsSection.css';
 
 const RoomHomeCard = ({ room }) => {
+  const { t } = useTranslation();
+
   return (
     <div className='bg-white flex flex-col w-[350px] rounded-[10px]'>
       <img src={room.image} alt={room.slug} />
@@ -19,7 +22,7 @@ const RoomHomeCard = ({ room }) => {
           to={`/apartments/${room.slug}`}
           className='rounded-full hover:bg-secondary bg-primary text-gray-text btn btn-text font-montserrat-semibold flex items-center justify-center transition-all duration-300'
         >
-          View
+          {t('apartments_card_view')}
         </Link>
       </div>
     </div>

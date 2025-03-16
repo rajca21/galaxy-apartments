@@ -4,8 +4,11 @@ import '../../styles/Location.css';
 import icons from '../../constants/icons';
 import SectionLayout from '../layout/SectionLayout';
 import images from '../../constants/images';
+import { useTranslation } from 'react-i18next';
 
 const Location = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <SectionLayout bgColor={'bg-gray-nav'}>
@@ -19,7 +22,7 @@ const Location = () => {
           {/* Location */}
           <div className='flex-1'>
             <h2 className='playfair-display-bold heading text-primary-dark'>
-              Our location
+              {t('location_title')}
             </h2>
             {/* Icons */}
             <div className='flex flex-col gap-2 pt-[46px]'>
@@ -69,10 +72,10 @@ const Location = () => {
 
             {/* Address */}
             <p className='pt-[22px] font-montserrat-bold address-title text-secondary-dark'>
-              Address
+              {t('location_address_title')}
             </p>
             <p className='pt-[16px] font-montserrat-normal address-text text-secondary-dark'>
-              Vojvođanska 448, Surčin, 11271 Belgrade, Serbia
+              {t('location_address')}
             </p>
 
             <a
@@ -81,7 +84,7 @@ const Location = () => {
               rel='noopener noreferrer'
               className='rounded-full hover:bg-secondary bg-primary text-gray-text btn btn-text font-montserrat-semibold flex items-center justify-center transition-all duration-300 mt-[36px]'
             >
-              Map
+              {t('location_map')}
             </a>
           </div>
           {/* Map */}

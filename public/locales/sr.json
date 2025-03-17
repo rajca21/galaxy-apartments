@@ -42,5 +42,16 @@
   "footer_menu_contact": "Kontakt",
   "footer_menu_about_us": "O nama",
   "footer_follow_us": " ",
-  "footer_copyright": "Sva prava zadržana."
+  "footer_copyright": "Sva prava zadržana.",
+
+  "meta": {
+    "home": {
+      "title": "Galaxy Apartmani",
+      "description": "Pronađite savršeno mesto za Vaš boravak u Beogradu.",
+      "keywords": "apartmani,odmor,beograd,aerodrom,surčin",
+      "og_title": "Galaxy Apartmani",
+      "og_description": "Pronađite savršeno mesto za Vaš boravak u Beogradu.",
+      "heading": "Dobrodošli u Galaxy Apartmane"
+    }
+  }
 }

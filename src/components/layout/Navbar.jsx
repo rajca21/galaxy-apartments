@@ -88,7 +88,7 @@ const Navbar = () => {
               onClick={toggleLanguage}
               className='cursor-pointer nav-inactive font-montserrat-medium'
             >
-              {i18n.language === 'sr' ? 'SRB' : 'ENG'}
+              {i18n.language === 'sr' ? 'ENG' : 'SRB'}
             </span>
           </nav>
           <a

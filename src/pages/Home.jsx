@@ -37,14 +37,14 @@ const Home = () => {
     updateMetaTag('keywords', t('meta.home.keywords'));
     updateMetaTag('og:title', t('meta.home.og_title'));
     updateMetaTag('og:description', t('meta.home.og_description'));
-    updateMetaTag('og:image', `${window.location.origin}/meta/assets/home.svg`);
+    updateMetaTag('og:image', `${window.location.origin}/meta/assets/home.jpg`);
     updateMetaTag('og:url', window.location.href);
     updateMetaTag('og:type', 'website');
     updateMetaTag('twitter:title', t('meta.home.og_title'));
     updateMetaTag('twitter:description', t('meta.home.og_description'));
     updateMetaTag(
       'twitter:image',
-      `${window.location.origin}/meta/assets/home.svg`
+      `${window.location.origin}/meta/assets/home.jpg`
     );
     updateMetaTag('twitter:card', 'summary_large_image');
   }, [t]);

@@ -32,17 +32,14 @@ const Apartments = () => {
     updateMetaTag('keywords', t('meta.apartments.keywords'));
     updateMetaTag('og:title', t('meta.apartments.og_title'));
     updateMetaTag('og:description', t('meta.apartments.og_description'));
-    updateMetaTag(
-      'og:image',
-      `${window.location.origin}/meta/assets/apartments.svg`
-    );
+    updateMetaTag('og:image', `${window.location.origin}/meta/assets/home.jpg`);
     updateMetaTag('og:url', window.location.href);
     updateMetaTag('og:type', 'website');
     updateMetaTag('twitter:title', t('meta.apartments.og_title'));
     updateMetaTag('twitter:description', t('meta.apartments.og_description'));
     updateMetaTag(
       'twitter:image',
-      `${window.location.origin}/meta/assets/apartments.svg`
+      `${window.location.origin}/meta/assets/home.jpg`
     );
     updateMetaTag('twitter:card', 'summary_large_image');
   }, [t]);

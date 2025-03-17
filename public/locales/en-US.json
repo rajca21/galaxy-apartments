@@ -60,6 +60,22 @@
       "keywords": "apartments,rentals,vacation,belgrade,airport",
       "og_title": "Galaxy Apartments",
       "og_description": "Find the perfect apartment for your stay in Belgrade."
+    },
+
+    "contact": {
+      "title": "Galaxy Apartments | Contact",
+      "description": "Contact us to book your stay.",
+      "keywords": "apartments,rentals,vacation,belgrade,airport,contact",
+      "og_title": "Galaxy Apartments | Contact",
+      "og_description": "Contact us to book your stay."
+    },
+
+    "about": {
+      "title": "Galaxy Apartments | About us",
+      "description": "Learn more about Galaxy Apartments and what we provide.",
+      "keywords": "apartments,rentals,vacation,belgrade,airport",
+      "og_title": "Galaxy Apartments | About us",
+      "og_description": "Learn more about Galaxy Apartments and what we provide."
     }
   }
 }

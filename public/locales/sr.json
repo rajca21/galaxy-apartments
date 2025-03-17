@@ -59,6 +59,22 @@
       "keywords": "apartmani,odmor,beograd,aerodrom,surčin",
       "og_title": "Galaxy Apartmani",
       "og_description": "Pronađite savršeno mesto za Vaš boravak u Beogradu."
+    },
+
+    "contact": {
+      "title": "Galaxy Apartmani | Kontakt",
+      "description": "Kontaktirajte nas kako biste rezervisali Vaš smeštaj.",
+      "keywords": "apartmani,odmor,beograd,aerodrom,surčin,kontakt",
+      "og_title": "Galaxy Apartmani | Kontakt",
+      "og_description": "Kontaktirajte nas kako biste rezervisali Vaš smeštaj."
+    },
+
+    "about": {
+      "title": "Galaxy Apartmani | O nama",
+      "description": "Saznajte više o Galaxy apartmani i prvoklasnoj usluzi koju nudimo.",
+      "keywords": "apartmani,odmor,beograd,aerodrom,surčin",
+      "og_title": "Galaxy Apartmani | O nama",
+      "og_description": "Saznajte više o Galaxy apartmani i prvoklasnoj usluzi koju nudimo."
     }
   }
 }

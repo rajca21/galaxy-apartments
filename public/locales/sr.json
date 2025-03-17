@@ -50,8 +50,15 @@
       "description": "Pronađite savršeno mesto za Vaš boravak u Beogradu.",
       "keywords": "apartmani,odmor,beograd,aerodrom,surčin",
       "og_title": "Galaxy Apartmani",
-      "og_description": "Pronađite savršeno mesto za Vaš boravak u Beogradu.",
-      "heading": "Dobrodošli u Galaxy Apartmane"
+      "og_description": "Pronađite savršeno mesto za Vaš boravak u Beogradu."
+    },
+
+    "apartments": {
+      "title": "Galaxy Apartmani",
+      "description": "Pronađite savršeno mesto za Vaš boravak u Beogradu.",
+      "keywords": "apartmani,odmor,beograd,aerodrom,surčin",
+      "og_title": "Galaxy Apartmani",
+      "og_description": "Pronađite savršeno mesto za Vaš boravak u Beogradu."
     }
   }
 }

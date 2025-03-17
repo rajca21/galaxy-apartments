@@ -42,5 +42,24 @@
   "footer_menu_contact": "Contact",
   "footer_menu_about_us": "About us",
   "footer_follow_us": "Get in touch",
-  "footer_copyright": "All rights reserved."
+  "footer_copyright": "All rights reserved.",
+
+  "meta": {
+    "home": {
+      "title": "Galaxy Apartments",
+      "description": "Find the perfect apartment for your stay in Belgrade.",
+      "keywords": "apartments,rentals,vacation,belgrade,airport",
+      "og_title": "Galaxy Apartments",
+      "og_description": "Find the perfect apartment for your stay in Belgrade.",
+      "heading": "Welcome to Galaxy Apartments"
+    },
+
+    "apartments": {
+      "title": "Galaxy Apartments",
+      "description": "Find the perfect apartment for your stay in Belgrade.",
+      "keywords": "apartments,rentals,vacation,belgrade,airport",
+      "og_title": "Galaxy Apartments",
+      "og_description": "Find the perfect apartment for your stay in Belgrade."
+    }
+  }
 }

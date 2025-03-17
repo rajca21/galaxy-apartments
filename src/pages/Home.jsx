@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import Hero from '../components/home/Hero';
@@ -11,27 +11,46 @@ import ApartmentsSection from '../components/home/ApartmentsSection';
 const Home = () => {
   const { t } = useTranslation();
 
+  useEffect(() => {
+    document.title = t('meta.home.title');
+
+    const updateMetaTag = (name, content) => {
+      let tag = document.querySelector(
+        `meta[property='${name}'], meta[name='${name}']`
+      );
+      if (tag) {
+        tag.setAttribute('content', content);
+      } else {
+        const newMeta = document.createElement('meta');
+        newMeta.setAttribute(
+          name.startsWith('og:') || name.startsWith('twitter:')
+            ? 'property'
+            : 'name',
+          name
+        );
+        newMeta.content = content;
+        document.head.appendChild(newMeta);
+      }
+    };
+
+    updateMetaTag('description', t('meta.home.description'));
+    updateMetaTag('keywords', t('meta.home.keywords'));
+    updateMetaTag('og:title', t('meta.home.og_title'));
+    updateMetaTag('og:description', t('meta.home.og_description'));
+    updateMetaTag('og:image', `${window.location.origin}/meta/assets/home.svg`);
+    updateMetaTag('og:url', window.location.href);
+    updateMetaTag('og:type', 'website');
+    updateMetaTag('twitter:title', t('meta.home.og_title'));
+    updateMetaTag('twitter:description', t('meta.home.og_description'));
+    updateMetaTag(
+      'twitter:image',
+      `${window.location.origin}/meta/assets/home.svg`
+    );
+    updateMetaTag('twitter:card', 'summary_large_image');
+  }, [t]);
+
   return (
     <>
-      <Helmet>
-        <title>{t('meta.home.title')}</title>
-        <meta name='description' content={t('meta.home.description')} />
-        <meta name='keywords' content={t('meta.home.keywords')} />
-        <meta property='og:title' content={t('meta.home.og_title')} />
-        <meta
-          property='og:description'
-          content={t('meta.home.og_description')}
-        />
-        <meta
-          property='og:image'
-          content='https://galaxy-apartments.vercel.app/meta/assets/home.svg'
-        />
-        <meta
-          property='og:url'
-          color={'https://galaxy-apartments.vercel.app/'}
-        />
-      </Helmet>
-
       <Hero />
       <Introduction />
       <GuestReviews />

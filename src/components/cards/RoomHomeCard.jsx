@@ -7,7 +7,7 @@ const RoomHomeCard = ({ room }) => {
   const { t } = useTranslation();
 
   return (
-    <div className='bg-white flex flex-col w-[350px] rounded-[10px]'>
+    <div className='room-home-card bg-white flex flex-col w-[350px] rounded-[10px]'>
       <img src={room.image} alt={room.slug} />
       <div className='flex flex-col px-[15px] pb-[15px] pt-[25px]'>
         <h3 className='font-montserrat-bold room-title text-primary-dark'>

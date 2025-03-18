@@ -59,3 +59,15 @@
   width: 15px;
   height: 15px;
 }
+
+.room-home-card {
+  overflow: hidden;
+}
+
+.room-home-card img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.room-home-card:hover img {
+  transform: scale(1.1);
+}

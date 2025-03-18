@@ -2,9 +2,14 @@ import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Dropdown } from 'flowbite-react';
 import { useTranslation } from 'react-i18next';
+import { motion, AnimatePresence } from 'framer-motion';
 
 import '../../styles/Navbar.css';
 import icons from '../../constants/icons';
+import {
+  mobileMenuItemVariants,
+  mobileMenuVariants,
+} from '../../utils/animationProps';
 
 const Navbar = () => {
   const { i18n, t } = useTranslation();
@@ -176,56 +181,56 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          {mobileMenuOpen && (
-            <div className='absolute w-full bg-gray-smoke z-50 shadow-sm'>
-              <nav className='flex flex-col gap-2 pb-2 justify-center items-center w-full'>
-                <NavLink
-                  to='/'
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={({ isActive }) =>
-                    isActive
-                      ? 'font-montserrat-semibold bg-secondary w-full text-center text-gray-text'
-                      : 'font-montserrat-medium text-secondary-dark'
-                  }
-                >
-                  {t('menu_home')}
-                </NavLink>
-                <NavLink
-                  to='/apartments'
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={({ isActive }) =>
-                    isActive
-                      ? 'font-montserrat-semibold bg-secondary w-full text-center text-gray-text'
-                      : 'font-montserrat-medium text-secondary-dark'
-                  }
-                >
-                  {t('menu_apartments')}
-                </NavLink>
-                <NavLink
-                  to='/contact'
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={({ isActive }) =>
-                    isActive
-                      ? 'font-montserrat-semibold bg-secondary w-full text-center text-gray-text'
-                      : 'font-montserrat-medium text-secondary-dark'
-                  }
-                >
-                  {t('menu_contact')}
-                </NavLink>
-                <NavLink
-                  to='/about-us'
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={({ isActive }) =>
-                    isActive
-                      ? 'font-montserrat-semibold bg-secondary w-full text-center text-gray-text'
-                      : 'font-montserrat-medium text-secondary-dark'
-                  }
-                >
-                  {t('menu_about_us')}
-                </NavLink>
-              </nav>
-            </div>
-          )}
+          <AnimatePresence>
+            {mobileMenuOpen && (
+              <motion.div
+                className='absolute w-full bg-gray-smoke z-50 shadow-sm'
+                variants={mobileMenuVariants}
+                initial='hidden'
+                animate='visible'
+                exit='exit'
+              >
+                <motion.nav className='flex flex-col gap-2 pb-2 justify-center items-center w-full'>
+                  {[
+                    { path: '/', label: 'menu_home' },
+                    { path: '/apartments', label: 'menu_apartments' },
+                    { path: '/contact', label: 'menu_contact' },
+                    { path: '/about-us', label: 'menu_about_us' },
+                  ].map((item, index) => (
+                    <NavLink
+                      key={index}
+                      to={item.path}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className='w-full text-center'
+                    >
+                      {({ isActive }) => (
+                        <motion.div
+                          variants={mobileMenuItemVariants}
+                          initial='hidden'
+                          animate={{
+                            opacity: 1,
+                            y: 0,
+                            backgroundColor: isActive
+                              ? 'rgba(196, 154, 108, 1)'
+                              : 'transparent',
+                          }}
+                          exit='exit'
+                          className={` ${
+                            isActive
+                              ? 'font-montserrat-semibold text-gray-text'
+                              : 'font-montserrat-medium text-secondary-dark'
+                          }`}
+                          transition={{ duration: 0.3 }}
+                        >
+                          {t(item.label)}
+                        </motion.div>
+                      )}
+                    </NavLink>
+                  ))}
+                </motion.nav>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </>

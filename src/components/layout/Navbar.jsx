@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='h-20 my-auto bg-gray-nav'>
+      <div className='h-20 my-auto bg-gray-text'>
         {/* Desktop navigation */}
         <div className='mx-[100px] 2xl:mx-[250px] hidden lgxl:flex justify-between items-center h-full'>
           <Link to='/'>

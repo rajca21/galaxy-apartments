@@ -76,5 +76,15 @@
       "og_title": "Galaxy Apartmani | O nama",
       "og_description": "Saznajte više o Galaxy apartmani i prvoklasnoj usluzi koju nudimo."
     }
+  },
+
+  "about_us": {
+    "about_us_title_1": "Priča o našim apartmanima",
+    "about_us_text_1": "Naš objekat je s ljubavlju osnovan 2022. godine kao porodični posao sa jasnim ciljem – da gostima pružimo vrhunsku udobnost i nezaboravan boravak. Nalazimo se u Beogradu, na samo 4 km od aerodroma Nikola Tesla. Takođe imamo veoma dobru povezanost sa autoputem, što nas čini idealnim izborom za putnike u tranzitu i turiste.",
+    "about_us_title_2": "Orijentisanost na korisnike",
+    "about_us_text_2": "Zahvaljujući izuzetno velikom interesovanju i poverenju naših gostiju, već u prvoj godini poslovanja proširili smo kapacitete sa 8 na 17 smeštajnih jedinica. Posebno smo ponosni na veliki broj stalnih gostiju koji nam se iznova vraćaju, prepoznajući našu posvećenost i gostoprimstvo.",
+    "about_us_title_3": "Komfor na prvom mestu",
+    "about_us_text_3a": "Gostima nudimo besplatan parking koji je pod video nadzorom, dok se u neposrednoj blizini nalaze supermarket, benzinska stanica, restoran, menjačnica, pekara i picerija, što osigurava dodatnu pogodnost tokom boravka. Takođe, za potpunu bezbrižnost, omogućavamo prevoz do i od aerodroma.",
+    "about_us_text_3b": "Dođite i uverite se zašto nas gosti biraju iznova – ovde se osećate kao kod kuće!"
   }
 }

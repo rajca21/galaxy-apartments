@@ -87,5 +87,15 @@
     "about_us_title_3": "Comfort oriented",
     "about_us_text_3a": "We offer free parking with video surveillance, and our location provides easy access to a supermarket, gas station, restaurant, bakery, exchange office and pizzeria, ensuring additional convenience during your stay. For a completely worry-free experience, we also provide airport transfer services.",
     "about_us_text_3b": "Come and see why our guests keep coming back – here, you’ll feel right at home!"
+  },
+
+  "contact_us": {
+    "contact": "Contact us",
+    "phone": "Phone number",
+    "call": "Call Now",
+    "email": "Email address",
+    "mail": "Mail Us",
+    "social": "Social media",
+    "follow": "Follow us on"
   }
 }

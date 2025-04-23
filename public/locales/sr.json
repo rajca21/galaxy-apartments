@@ -86,5 +86,15 @@
     "about_us_title_3": "Komfor na prvom mestu",
     "about_us_text_3a": "Gostima nudimo besplatan parking koji je pod video nadzorom, dok se u neposrednoj blizini nalaze supermarket, benzinska stanica, restoran, menjačnica, pekara i picerija, što osigurava dodatnu pogodnost tokom boravka. Takođe, za potpunu bezbrižnost, omogućavamo prevoz do i od aerodroma.",
     "about_us_text_3b": "Dođite i uverite se zašto nas gosti biraju iznova – ovde se osećate kao kod kuće!"
+  },
+
+  "contact_us": {
+    "contact": "Kontakt",
+    "phone": "Broj telefona",
+    "call": "Pozovite",
+    "email": "Email adresa",
+    "mail": "Pošaljite mail",
+    "social": "Društvene mreže",
+    "follow": "Pratite nas na"
   }
 }

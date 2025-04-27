@@ -97,5 +97,56 @@
     "mail": "Mail Us",
     "social": "Social media",
     "follow": "Follow us on"
+  },
+
+  "rooms": {
+    "jacuzzi": {
+      "title": "Apartment with SPA bath",
+      "short": "Experience ultimate romance and luxury in a spacious apartment with a Jacuzzi, a king-size bed, and a starry ceiling.",
+      "long": "This luxurious 35m² apartment offers the perfect blend of comfort and elegance. The spacious room features a beautiful jacuzzi, a king-size bed, and a romantic starry ceiling, creating a magical atmosphere. Enjoy the convenience of a private terrace, a large wardrobe, and premium amenities, including hotel toiletries and slippers, ensuring a top-tier stay. Enjoy the convenience of a 24/7 secured parking with video surveillance.",
+      "long_more": ""
+    },
+    "standard_room": {
+      "title": "Standard Room",
+      "short": "A cozy and comfortable space for two, perfect for relaxation after a long day.",
+      "long": "Our Standard Room is the perfect choice for those seeking comfort in a cozy and intimate setting (13m²). With a double bed, a smart TV with cable channels, Wi-Fi,a hairdryer, and premium hotel toiletries, it provides everything you need for a pleasant stay. Enjoy the convenience of a 24/7 secured parking with video surveillance.",
+      "long_more": ""
+    },
+    "deluxe_room": {
+      "title": "Deluxe Room",
+      "short": "A blend of elegance and comfort in a spacious room with premium amenities for a perfect stay.",
+      "long": "Experience the perfect combination of comfort and elegance in our 18m² Deluxe Room, designed for two guests. The room features a comfortable double bed, a smart TV with cable channels, Wi-Fi, a hairdryer, and premium hotel toiletries for a relaxing stay. Every detail has been carefully selected to ensure maximum comfort. Enjoy the convenience of a 24/7 secured parking with video surveillance.",
+      "long_more": ""
+    },
+    "deluxe_studio": {
+      "title": "Deluxe Studio Apartment",
+      "short": "A spacious and modernly equipped studio with a private terrace and kitchen for complete freedom and comfort.",
+      "long": "Enjoy the spacious 35m² Studio Apartment, offering everything you need for a comfortable stay. It features a double bed, a smart TV with cable channels, Wi-Fi, a hairdryer, and luxury hotel toiletries. Relax on your private terrace with furniture, or take advantage of the fully equipped kitchen, perfect for meal preparation. For your convenience, secured parking under video surveillance located right in front of the apartment.",
+      "long_more": ""
+    },
+    "standard_apt": {
+      "title": "Standard Apartment",
+      "short": "Compact yet fully equipped – the ideal studio apartment for two, featuring a private terrace and a big kitchen for complete flexibility.",
+      "long": "Spacious and thoughtfully designed, the Standard Apartment (35m²) offers the perfect combination of comfort and functionality for two guests. The separate bedroom features a cozy double bed and a spacious wardrobe, ensuring plenty of storage space for a relaxed stay. The living room is equipped with a smart TV with cable channels and high-speed Wi-Fi, providing entertainment and connectivity at all times.",
+      "long_more": "Guests can enjoy premium hotel toiletries and a hairdryer for added convenience. With secured parking under video surveillance located right in front of the apartment, your stay is completely worry-free. Whether you’re visiting for business or leisure, this apartment provides everything you need for a comfortable and enjoyable experience."
+    },
+    "triple_apt": {
+      "title": "Triple Studio Apartment",
+      "short": "A perfect combination of space and comfort – enjoy a modern triple studio with a terrace and a fully equipped kitchen.",
+      "long": "The spacious and modernly equipped 35m² Triple Studio Apartment offers maximum comfort and flexibility for up to three guests. It features two separate single beds and a sofa bed, making it ideal for families or small groups. Guests can relax on the private terrace with furniture, while the fully equipped kitchen provides the convenience of home-cooked meals. The apartment also includes a smart TV with cable channels, high-speed Wi-Fi, and luxury hotel toiletries, ensuring a comfortable and worry-free stay.",
+      "long_more": ""
+    },
+    "standard_studio_apt": {
+      "title": "Standard Studio Apartment",
+      "short": "A modern and functional 30m² studio apartment with a terrace and kitchen, perfect for two.",
+      "long": "The compact yet perfectly designed 30m2 Standard Studio Apartment is ideal for two guests, offering a sense of comfort and privacy. It features a double bed, a cozy armchair, and a private terrace with furniture, perfect for morning coffee or evening relaxation. The fully equipped kitchen provides the convenience of home cooking, while a smart TV with cable channels, Wi-Fi, hairdryer, and luxury hotel toiletries add to the premium comfort.",
+      "long_more": ""
+    },
+    "deluxe_family": {
+      "title": "Deluxe Family Apartment",
+      "short": "A perfect family apartment with a separate bedroom, living room, terrace, and kitchen for maximum comfort.",
+      "long": "The spacious 40m² Family Apartment offers the perfect comfort for families or groups of up to three guests. It features a separate bedroom with a double bed and a large wardrobe, as well as a living room with a sofa bed. Guests can enjoy a private terrace with furniture and a fully equipped kitchen with a bar counter. The apartment is also equipped with a smart TV with cable channels, Wi-Fi, a hairdryer, and luxury hotel toiletries. With a 24/7 secured parking with video surveillance, your stay will be completely worry-free.",
+      "long_more": ""
+    }
   }
 }

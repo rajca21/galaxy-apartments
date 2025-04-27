@@ -96,5 +96,56 @@
     "mail": "Pošaljite mail",
     "social": "Društvene mreže",
     "follow": "Pratite nas na"
+  },
+
+  "rooms": {
+    "jacuzzi": {
+      "title": "Apartman sa đakuzi kadom",
+      "short": "Doživite vrhunsku romantiku i luksuz za parove u prostranom apartmanu sa đakuzijem, king-size krevetom i zvezdanim nebom.",
+      "long": "Luksuzni apartman površine 35m² pruža savršen spoj komfora i elegancije. U sklopu prostrane sobe nalazi se prelepi đakuzi, idealan za opuštanje, uz udoban king-size krevet i romantično zvezdano nebo koje stvara magičnu atmosferu. Apartman poseduje privatnu terasu, prostrani garderober i sve što vam je potrebno za prijatan boravak, uključujući hotelsku kozmetiku, papuče i pažljivo odabrane detalje za maksimalnu udobnost. Gostima je na raspolaganju obezbeđen parking pod video nadzorom.",
+      "long_more": ""
+    },
+    "standard_room": {
+      "title": "Standardna soba",
+      "short": "Udoban i ušuškan prostor za dvoje, idealan za opuštanje nakon dugog dana. ",
+      "long": "Naša standardna soba, površine 13m2, je savršeno rešenje za one koji traže udobnost u manjoj, intimnoj kvadraturi. Ušuškana atmosfera, bračni krevet, smart TV sa kablovskim kanalima, wi-fi internet konekcija, fen i hotelska kozmetika osiguravaju prijatan boravak za dve osobe. Uz to, na raspolaganju vam je obezbeđen parking sa video nadzorom.",
+      "long_more": ""
+    },
+    "deluxe_room": {
+      "title": "Deluxe soba",
+      "short": "Kombinacija elegancije i komfora u prostranoj sobi sa premium sadržajima upotpunjuje savršen boravak za dvoje.",
+      "long": "Osetite savršen spoj udobnosti i elegancije u našoj deluxe sobi površine 18m², idealnoj za dvoje. Soba je opremljena udobnim bračnim krevetom, smart TV-om sa kablovskim kanalima, wi-fi internet konekcijom, fenom i hotelskom kozmetikom za potpuno uživanje. Svaki detalj je pažljivo odabran kako bi vaš boravak bio prijatan i opuštajući. Na raspolaganju vam je obezbeđen parking sa video nadzorom.",
+      "long_more": ""
+    },
+    "deluxe_studio": {
+      "title": "Deluxe studio apartman",
+      "short": "Prostran i moderno opremljen studio apartman sa kuhinjom i terasom gde dve odrasle osobe mogu uživati u potpunoj slobodi i udobnosti.",
+      "long": "Uživajte u prostranom deluxe studio apartmanu površine 35m², koji nudi sve što vam je potrebno za udoban boravak. Opremljen je bračnim krevetom, smart TV-om sa kablovskim kanalima, wi-fi internet konekcijom, fenom i hotelskom kozmetikom. Uživajte u privatnoj terasi sa nameštajem, kao i u kompletno opremljenoj kuhinji, savršenoj za pripremu obroka. Gostima su dostupan privatni parking sa video nadzorom.",
+      "long_more": ""
+    },
+    "standard_apt": {
+      "title": "Standardni apartman",
+      "short": "Kompaktan, ali savršeno opremljen – idealan apartman za dvoje sa terasom i velikom kuhinjom za potpunu slobodu boravka.",
+      "long": "Prostran i funkcionalno dizajniran, Standardni apartman (35m²) nudi savršen spoj komfora i praktičnosti za dve osobe. Odvojena spavaća soba opremljena je udobnim bračnim krevetom i prostranim ormarom, pružajući dovoljno prostora za odlaganje stvari i prijatan boravak. Dnevni boravak sadrži smart TV sa kablovskim kanalima i brzi Wi-Fi, omogućavajući opuštanje i povezivanje u svakom trenutku.",
+      "long_more": "Gostima su na raspolaganju hotelska kozmetika i fen, dok se obezbeđen parking sa video nadzorom nalazi odmah ispred apartmana, što boravak čini potpuno bezbrižnim. Bilo da dolazite poslovno ili turistički, ovaj apartman nudi sve što vam je potrebno za ugodan i opuštajući boravak."
+    },
+    "triple_apt": {
+      "title": "Trokrevetni studio apartman",
+      "short": "Savršen spoj prostranosti i udobnosti – uživajte u moderno opremljenom trokrevetnom studiju sa terasom i kuhinjom.",
+      "long": "Prostran i moderno opremljen trokrevetni studio apartman površine 35m² pruža maksimalnu udobnost i fleksibilnost za boravak do tri osobe. Opremljen je sa dva odvojena kreveta i jednom sofom na razvlačenje, savršenom za dodatnog gosta. Gosti mogu uživati u terasi sa nameštajem, dok kompletno opremljena kuhinja omogućava pripremu obroka u bilo kom trenutku. U apartmanu se nalaze smart TV sa kablovskim kanalima, brzi wi-fi, hotelska kozmetika i sve što je potrebno za prijatan i bezbrižan boravak. Gostima je na raspolaganju i privatni parking pod video nadzorom.",
+      "long_more": ""
+    },
+    "standard_studio_apt": {
+      "title": "Standardni studio apartman",
+      "short": "Moderan i funkcionalan studio apartman sa terasom i kuhinjom, idealan za dvoje.",
+      "long": "Kompaktan, ali savršeno organizovan standardni studio apartman površine 30m2, dizajniran je za dvoje, pružajući osećaj udobnosti i privatnosti. Sastoji se od bračnog kreveta, udobne fotelje i terase sa nameštajem, savršene za opuštanje uz jutarnju kafu ili večernje uživanje. Kompletno opremljena kuhinja omogućava pripremu obroka, dok smart TV sa kablovskim kanalima, wi-fi internet konekcija, fen i hotelska kozmetika doprinose vrhunskom komforu. Gostima su na raspolaganju privatni parking pod video nadzorom.",
+      "long_more": ""
+    },
+    "deluxe_family": {
+      "title": "Deluxe porodični apartman",
+      "short": "Savršen porodični apartman sa odvojenom spavaćom sobom, dnevnim boravkom, terasom i kuhinjom za maksimalnu udobnost.",
+      "long": "Prostrani porodični apartman površine 40m² nudi savršen komfor za porodice kapaciteta za tri osobe. Sastoji se od odvojene spavaće sobe sa bračnim krevetom i velikim garderoberom, te dnevnog boravka sa sofom na razvlačenje. Gosti mogu uživati u terasi sa nameštajem i potpuno opremljenoj kuhinji sa šankom. Apartman je dodatno opremljen smart TV-om sa kablovskim kanalima, wi-fi internet konekcijom, fenom i hotelskom kozmetikom. Uz privatni parking sa video nadzorom, vaš boravak će biti potpuno bezbrižan.",
+      "long_more": ""
+    }
   }
 }

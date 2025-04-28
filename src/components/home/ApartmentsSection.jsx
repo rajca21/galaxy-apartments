@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import '../../styles/ApartmentsSection.css';
-import { roomsArray } from '../../constants/data';
+import { roomsArray } from '../../utils/data';
 import SectionLayout from '../layout/SectionLayout';
 import RoomHomeCard from '../cards/RoomHomeCard';
 
@@ -39,11 +39,13 @@ const ApartmentsSection = () => {
             pagination={{ clickable: true }}
             className='relative flex items-center justify-between max-w-[1200px] mx-auto'
           >
-            {roomsArray.map((room, index) => (
-              <SwiperSlide key={index} className='flex justify-center'>
-                <RoomHomeCard room={room} />
-              </SwiperSlide>
-            ))}
+            {roomsArray
+              .filter((r) => r.show)
+              .map((room) => (
+                <SwiperSlide key={room.id} className='flex justify-center'>
+                  <RoomHomeCard room={room} placement={'home'} />
+                </SwiperSlide>
+              ))}
           </Swiper>
         </motion.div>
       </SectionLayout>

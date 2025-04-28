@@ -1,9 +1,17 @@
-import room1 from '../assets/rooms/room1.png';
-import room2 from '../assets/rooms/room2.png';
-import room3 from '../assets/rooms/room3.png';
+import deluxe_family from '../assets/rooms/deluxe_family.png';
+import deluxe_room from '../assets/rooms/deluxe_room.png';
+import deluxe_studio from '../assets/rooms/deluxe_studio.png';
+import jacuzzi from '../assets/rooms/jacuzzi.png';
+import standard_room from '../assets/rooms/standard_room.png';
+import standard_studio_apt from '../assets/rooms/standard_studio_apt.png';
+import triple_apt from '../assets/rooms/triple_apt.png';
 
 export default {
-  room1,
-  room2,
-  room3,
+  deluxe_family,
+  deluxe_room,
+  deluxe_studio,
+  jacuzzi,
+  standard_room,
+  standard_studio_apt,
+  triple_apt,
 };

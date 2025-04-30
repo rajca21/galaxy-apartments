@@ -147,5 +147,17 @@
       "long": "Prostrani porodični apartman površine 40m² nudi savršen komfor za porodice kapaciteta za tri osobe. Sastoji se od odvojene spavaće sobe sa bračnim krevetom i velikim garderoberom, te dnevnog boravka sa sofom na razvlačenje. Gosti mogu uživati u terasi sa nameštajem i potpuno opremljenoj kuhinji sa šankom. Apartman je dodatno opremljen smart TV-om sa kablovskim kanalima, wi-fi internet konekcijom, fenom i hotelskom kozmetikom. Uz privatni parking sa video nadzorom, vaš boravak će biti potpuno bezbrižan.",
       "long_more": ""
     }
+  },
+
+  "room_facilities": {
+    "size": "Površina",
+    "bathroom": "Sopstveno kupatilo",
+    "spatub": "Hidromasažna kada",
+    "wifi": "Bežični internet",
+    "ac": "Klima uređaj",
+    "sound": "Zvučna izolacija",
+    "view": "Pogled",
+    "kitchen": "Kuhinja",
+    "balcony": "Terasa"
   }
 }

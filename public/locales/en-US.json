@@ -148,5 +148,17 @@
       "long": "The spacious 40m² Family Apartment offers the perfect comfort for families or groups of up to three guests. It features a separate bedroom with a double bed and a large wardrobe, as well as a living room with a sofa bed. Guests can enjoy a private terrace with furniture and a fully equipped kitchen with a bar counter. The apartment is also equipped with a smart TV with cable channels, Wi-Fi, a hairdryer, and luxury hotel toiletries. With a 24/7 secured parking with video surveillance, your stay will be completely worry-free.",
       "long_more": ""
     }
+  },
+
+  "room_facilities": {
+    "size": "Size",
+    "bathroom": "Private bathroom",
+    "spatub": "Spa tub",
+    "wifi": "Free WiFi",
+    "ac": "Air conditioning",
+    "sound": "Soundproof",
+    "view": "View",
+    "kitchen": "Kitchen",
+    "balcony": "Balcony"
   }
 }

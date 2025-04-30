@@ -38,7 +38,7 @@ const Apartment = () => {
                   <img src={room?.headerImg} className='rounded-[10px] ' />
                 </div>
                 <div className='flex-1'>
-                  <h1 className='heading font-montserrat-bold text-primary-dark'>
+                  <h1 className='apartment_heading font-montserrat-bold text-primary-dark'>
                     {t(room.titleKey)}
                   </h1>
                   <div className='grid grid-cols-3 mt-[25px] gap-[15px]'>

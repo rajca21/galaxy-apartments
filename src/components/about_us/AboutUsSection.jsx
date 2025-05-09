@@ -10,8 +10,8 @@ const AboutUsSection = () => {
 
   return (
     <div className='flex flex-col'>
-      <SectionLayout bgColor={'bg-primary-light'}>
-        <div className='flex flex-col lg:flex-row gap-12 xl:gap-32 items-center'>
+      <SectionLayout bgColor={'bg-primary-light'} smPy={'65px'}>
+        <div className='flex flex-col lg:flex-row gap-[24px] sm:gap-12 xl:gap-32 items-center'>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -22,7 +22,7 @@ const AboutUsSection = () => {
             <h2 className='playfair-display-bold about_us_title text-white'>
               {t('about_us.about_us_title_1')}
             </h2>
-            <p className='pt-[40px] font-montserrat-normal about_us_paragraphs text-white text-justify'>
+            <p className='pt-[24px] sm:pt-[40px] font-montserrat-normal about_us_paragraphs text-white text-justify'>
               {t('about_us.about_us_text_1')}
             </p>
           </motion.div>
@@ -39,8 +39,8 @@ const AboutUsSection = () => {
           </motion.div>
         </div>
       </SectionLayout>
-      <SectionLayout bgColor={'bg-gray-nav'}>
-        <div className='flex flex-col lg:flex-row gap-12 xl:gap-32 items-center'>
+      <SectionLayout bgColor={'bg-gray-nav'} smPy={'65px'}>
+        <div className='flex flex-col lg:flex-row gap-[24px] sm:gap-12 xl:gap-32 items-center'>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -62,14 +62,14 @@ const AboutUsSection = () => {
             <h2 className='playfair-display-bold about_us_title text-primary-dark'>
               {t('about_us.about_us_title_2')}
             </h2>
-            <p className='pt-[40px] font-montserrat-normal about_us_paragraphs text-primary-dark text-justify'>
+            <p className='pt-[24px] sm:pt-[40px] font-montserrat-normal about_us_paragraphs text-primary-dark text-justify'>
               {t('about_us.about_us_text_2')}
             </p>
           </motion.div>
         </div>
       </SectionLayout>
-      <SectionLayout bgColor={'bg-gray-copyright'}>
-        <div className='flex flex-col lg:flex-row gap-12 xl:gap-32 items-center'>
+      <SectionLayout bgColor={'bg-gray-copyright'} smPy={'65px'}>
+        <div className='flex flex-col lg:flex-row gap-[24px] sm:gap-12 xl:gap-32 items-center'>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -80,10 +80,10 @@ const AboutUsSection = () => {
             <h2 className='playfair-display-bold about_us_title text-white'>
               {t('about_us.about_us_title_3')}
             </h2>
-            <p className='pt-[40px] font-montserrat-normal about_us_paragraphs text-white text-justify'>
+            <p className='pt-[24px] sm:pt-[40px] font-montserrat-normal about_us_paragraphs text-white text-justify'>
               {t('about_us.about_us_text_3a')}
             </p>
-            <p className='pt-[40px] font-montserrat-normal about_us_paragraphs text-white text-justify'>
+            <p className='pt-0 sm:pt-[40px] font-montserrat-normal about_us_paragraphs text-white text-justify'>
               {t('about_us.about_us_text_3b')}
             </p>
           </motion.div>

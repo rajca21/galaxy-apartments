@@ -9,6 +9,7 @@ export default {
         xs: '360px',
         mdlg: '920px',
         lgxl: '1100px',
+        onehalfxl: '1350px',
       },
       colors: {
         primary: {

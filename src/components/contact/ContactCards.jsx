@@ -11,18 +11,23 @@ const ContactCards = () => {
   return (
     <>
       <PageFirstSectionLayout bgColor={'bg-primary-light'}>
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: 'easeOut' }}
-          viewport={{ once: true, amount: 0.2 }}
-        >
-          <h2 className='text-center contact_title playfair-display-bold hidden md:block text-white pb-[65px]'>
+        <div>
+          <motion.h2
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            className='text-center contact_title playfair-display-bold hidden md:block text-white pb-[65px]'
+          >
             {t('contact_us.contact')}
-          </h2>
+          </motion.h2>
 
-          <div className='flex flex-col lg:flex-row justify-between gap-[24px]'>
-            <div className='bg-gray-nav w-full lg:w-[341px] h-[211px] rounded-[25px]'>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: 'easeInOut' }}
+            className='flex flex-col lg:flex-row justify-between gap-[24px] md:gap-8'
+          >
+            <div className='bg-gray-nav w-full lg:w-[341px] onehalfxl:w-full h-[211px] rounded-[25px]'>
               <div className='flex flex-col items-center justify-center py-[29px]'>
                 <img src={icons.call_contact} alt='phone_icon' />
                 <h3 className='mt-[15px] font-montserrat-semibold contact_text text-primary'>
@@ -42,7 +47,7 @@ const ContactCards = () => {
                 </a>
               </div>
             </div>
-            <div className='bg-gray-nav w-full lg:w-[341px] h-[211px] rounded-[25px]'>
+            <div className='bg-gray-nav w-full lg:w-[341px] onehalfxl:w-full h-[211px] rounded-[25px]'>
               <div className='flex flex-col items-center justify-center py-[29px]'>
                 <img src={icons.mail_contact} alt='mail_icon' />
                 <h3 className='mt-[15px] font-montserrat-semibold contact_text text-primary'>
@@ -62,7 +67,7 @@ const ContactCards = () => {
                 </a>
               </div>
             </div>
-            <div className='bg-gray-nav w-full lg:w-[341px] h-[211px] rounded-[25px]'>
+            <div className='bg-gray-nav w-full lg:w-[341px] onehalfxl:w-full h-[211px] rounded-[25px]'>
               <div className='flex flex-col items-center justify-center py-[29px]'>
                 <img src={icons.graph_contact} alt='graph_icon' />
                 <h3 className='mt-[15px] font-montserrat-semibold contact_text text-primary'>
@@ -107,8 +112,8 @@ const ContactCards = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </PageFirstSectionLayout>
     </>
   );

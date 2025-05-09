@@ -14,14 +14,18 @@ const ApartmentsListSection = () => {
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: 'easeOut' }}
-          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
           className='text-center contact_title playfair-display-bold hidden md:block text-primary-dark pb-[65px]'
         >
           {t('menu_apartments')}
         </motion.h2>
 
-        <div className='flex w-full'>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, ease: 'easeInOut' }}
+          className='flex w-full'
+        >
           <div className='w-full grid gap-y-8 gap-x-8 sm:grid-cols-2 lg:grid-cols-3'>
             {roomsArray
               .filter((r) => r.show)
@@ -33,7 +37,7 @@ const ApartmentsListSection = () => {
                 />
               ))}
           </div>
-        </div>
+        </motion.div>
       </PageFirstSectionLayout>
     </>
   );

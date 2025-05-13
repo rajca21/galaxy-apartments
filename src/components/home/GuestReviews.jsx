@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,12 +8,18 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import '../../styles/GusetReviews.css';
+import { randomizeArray } from '../../utils/helpers';
 import { userReviews } from '../../utils/data';
 import SectionLayout from '../layout/SectionLayout';
 import GuestReviewCard from '../cards/GuestReviewCard';
 
 const GuestReviews = () => {
   const { t } = useTranslation();
+  const [reviews, setReviews] = useState([]);
+
+  useEffect(() => {
+    setReviews(randomizeArray(userReviews));
+  }, [userReviews]);
 
   return (
     <div className='reviews'>
@@ -52,7 +59,7 @@ const GuestReviews = () => {
               pagination={{ clickable: true }}
               className='relative flex items-center justify-between max-w-[1200px] mx-auto'
             >
-              {userReviews.slice(0, 4).map((userReview, index) => (
+              {reviews.slice(0, 4).map((userReview, index) => (
                 <SwiperSlide key={index} className='flex justify-center'>
                   <GuestReviewCard key={index} userReview={userReview} />
                 </SwiperSlide>

@@ -60,7 +60,6 @@ const Hero = () => {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
-        viewport={{ once: true, amount: 0.2 }}
         className='absolute inset-0 h-full flex flex-col justify-center px-[20px] sm:px-[40px] lg:px-[100px] 2xl:px-[250px]'
       >
         <div className='flex flex-row gap-1'>

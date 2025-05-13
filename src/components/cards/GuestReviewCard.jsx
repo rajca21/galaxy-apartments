@@ -1,99 +1,69 @@
-import '../../styles/GusetReviews.css';
-import icons from '../../constants/icons';
-import { createArray } from '../../utils/helpers';
+import { useEffect, useRef, useState } from 'react';
 
-const Stars = ({ reviewStars }) => {
-  if (reviewStars >= 3) {
-    return (
-      <div className='flex flex-row gap-0.5 items-center'>
-        {createArray(2).map((num) => (
-          <img
-            key={num}
-            src={icons.star_purple}
-            className='size-[20px]'
-            alt='purple-star-icon'
-          />
-        ))}
-        <img
-          src={icons.star_purple}
-          className='size-[25px]'
-          alt='purple-star-icon'
-        />
-        {createArray(reviewStars - 3).map((num) => (
-          <img
-            key={num}
-            src={icons.star_purple}
-            className='size-[20px]'
-            alt='purple-star-icon'
-          />
-        ))}
-        {createArray(5 - reviewStars).map((num) => (
-          <img
-            key={num}
-            src={icons.star_purple_outline}
-            className='size-[20px]'
-            alt='purple-star-outline-icon'
-          />
-        ))}
-      </div>
-    );
-  } else {
-    <div className='flex flex-row gap-0.5 items-center'>
-      {createArray(reviewStars).map((num) => (
-        <img
-          key={num}
-          src={icons.star_purple}
-          className='size-[20px]'
-          alt='purple-star-outline-icon'
-        />
-      ))}
-      <img
-        src={icons.star_purple_outline}
-        className='size-[25px]'
-        alt='purple-star-outline-icon'
-      />
-      {createArray(2).map((num) => (
-        <img
-          key={num}
-          src={icons.star_purple_outline}
-          className='size-[20px]'
-          alt='purple-star-outline-icon'
-        />
-      ))}
-    </div>;
-  }
-};
+import '../../styles/GusetReviews.css';
+import images from '../../constants/images';
+import GuestReviewModal from '../modals/GuestReviewModal';
+import Stars from './Stars';
 
 const GuestReviewCard = ({ userReview }) => {
+  const [isClamped, setIsClamped] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const pRef = useRef(null);
+
+  useEffect(() => {
+    const el = pRef.current;
+    if (el) {
+      setIsClamped(el.scrollHeight > el.offsetHeight);
+    }
+  }, [userReview]);
+
   return (
-    <div className='bg-transparent w-[255px] h-full'>
-      <div className='flex flex-col items-center w-full'>
-        <div className='h-[45px] bg-gray-copyright w-full'></div>
-        <div className='flex flex-col items-center w-full rounded-[10px] bg-gray-text'>
-          <div className='border-white border-4 -mt-[45px] rounded-full'>
-            <img
-              src={userReview.image}
-              alt={userReview.user}
-              className='size-[90px] rounded-full'
-            />
-          </div>
+    <>
+      <div className='bg-transparent w-[255px] h-full'>
+        <div className='flex flex-col items-center w-full'>
+          <div className='h-[45px] bg-gray-copyright w-full'></div>
+          <div className='flex flex-col items-center w-full rounded-[10px] bg-gray-text'>
+            <div className='border-white border-4 -mt-[45px] rounded-full'>
+              <img
+                src={images.booking_pink}
+                alt='booking_pink_logo'
+                className='size-[90px] rounded-full'
+              />
+            </div>
 
-          <div className='pt-[10px]'>
-            <Stars reviewStars={userReview.stars} />
-          </div>
+            <div className='pt-[10px]'>
+              <Stars reviewStars={userReview.stars} />
+            </div>
 
-          <p className='pt-[15px] px-[24px] line-clamp-6 font-montserrat-normal review-text text-primary-dark'>
-            {userReview.review}
-          </p>
+            <div
+              className='h-[125px]'
+              onClick={() => isClamped && setIsModalOpen(true)}
+            >
+              <p
+                ref={pRef}
+                className={`pt-[15px] px-[24px] line-clamp-6 font-montserrat-normal review-text text-primary-dark ${
+                  isClamped && 'cursor-pointer'
+                }`}
+              >
+                {userReview.review}
+              </p>
+            </div>
 
-          <div className='w-full flex justify-start py-[24px] px-[24px]'>
-            <p className='font-montserrat-semibold review-user text-primary'>
-              {userReview.user}
-            </p>
+            <div className='w-full flex justify-start py-[24px] px-[24px]'>
+              <p className='font-montserrat-semibold review-user text-primary'>
+                {userReview.user}
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      {isModalOpen && (
+        <GuestReviewModal
+          userReview={userReview}
+          setIsModalOpen={setIsModalOpen}
+        />
+      )}
+    </>
   );
 };
 

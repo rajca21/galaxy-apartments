@@ -178,3 +178,62 @@ export const roomsArray = [
     },
   },
 ];
+
+export const userReviews = [
+  {
+    user: 'Sam',
+    review:
+      "The room was very spacious and had a cool space-age theme befitting of the name Galaxy Apartments. It's very close to the airport, making it perfect for short layovers. The staff are incredibly friendly and helpful. In fact, I would have missed my 6am flight without the staff. After falling back asleep after my alarm, a staff member made sure I was awake and didn't miss my taxi. Top service.",
+    stars: 5,
+    sex: 'male',
+    country: 'im',
+  },
+  {
+    user: 'Evgenii',
+    review:
+      "The aparmtent's location is only 10 minutes by taxi from the airport. In terms of convenience and overall experience, I'd happily give it a 12 out of 10. The apartment itself is impeccable - it's clean, comfortable, and well-maintained. Both the ventilation and central heating systems worked flawlessly, ensuring a pleasant stay regardless of the weather outside. I highly recommend this place for anyone if you need to get accommodation in the vicinity of the airport.",
+    stars: 5,
+    sex: 'male',
+    country: 'ru',
+  },
+  {
+    user: 'Milena',
+    review:
+      'J ai tout aimé..la proximité avec l aeroport..la présence d une personne malgre l accueil tardif.. Le petit café du matin.. Les hoteliers sont charmant et trés à l écoute..pret à vous aider à tout moment.Beaucoup plus que des professionnels de l hôtellerie. Merci à eux et bonne continuation.',
+    stars: 5,
+    sex: 'female',
+    country: 'fr',
+  },
+  {
+    user: 'Biljana',
+    review:
+      'Prekrasna komunikacija, preubavi i cisti sobi, odlicno precekani, so svoj parking, preporacuvam od srce',
+    stars: 5,
+    sex: 'female',
+    country: 'mk',
+  },
+  {
+    user: 'Ksenia',
+    review:
+      'Close to the airport, shops, restaurants, bus stops. Clean, quiet, great bed, shower with good hot water pressuer, everything you need to comfortably spend a couple of days.',
+    stars: 5,
+    sex: 'female',
+    country: 'il',
+  },
+  {
+    user: 'Yuliya',
+    review:
+      "Stayed for one night with the kids. Checked in at 00:00. The man at the reception was very polite and friendly. The two rooms were very clean, cozy and comfortable. The location is near the airport and not far from the highway. We had a good night's rest.",
+    stars: 5,
+    sex: 'female',
+    country: 'ua',
+  },
+  {
+    user: 'Luis',
+    review:
+      'Simple yet cosy hotel close to Belgrade airport. Very friendly owners that will help you with everything you may need. Great value for money, comfortable bed.',
+    stars: 5,
+    sex: 'male',
+    country: 'br',
+  },
+];

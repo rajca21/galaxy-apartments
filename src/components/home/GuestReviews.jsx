@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import '../../styles/GusetReviews.css';
-import { userReviews } from '../../constants/data';
+import { userReviews } from '../../utils/data';
 import SectionLayout from '../layout/SectionLayout';
 import GuestReviewCard from '../cards/GuestReviewCard';
 
@@ -34,7 +34,7 @@ const GuestReviews = () => {
           className='pt-[50px]'
         >
           <div className='hidden xl:flex justify-between'>
-            {userReviews.slice(0, 4).map((userReview, index) => (
+            {userReviews.slice(2, 6).map((userReview, index) => (
               <GuestReviewCard key={index} userReview={userReview} />
             ))}
           </div>

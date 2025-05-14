@@ -22,7 +22,7 @@ const ContactMap = () => {
                 <div className='flex flex-row items-center gap-2 w-[100px]'>
                   <img src={icons.storefront} alt='store-icon' />
                   <p className='font-montserrat-normal locations-text text-secondary-dark'>
-                    50 m
+                    100 m
                   </p>
                 </div>
                 <div className='flex flex-row items-center gap-2 w-[100px]'>
@@ -36,13 +36,13 @@ const ContactMap = () => {
                 <div className='flex flex-row items-center gap-2 w-[100px]'>
                   <img src={icons.cafe} alt='cafe-icon' />
                   <p className='font-montserrat-normal locations-text text-secondary-dark'>
-                    100 m
+                    50 m
                   </p>
                 </div>
                 <div className='flex flex-row items-center gap-2 w-[100px]'>
                   <img src={icons.airplane} alt='airplane-icon' />
                   <p className='font-montserrat-normal locations-text text-secondary-dark'>
-                    3.5 km
+                    4 km
                   </p>
                 </div>
               </div>
@@ -50,7 +50,7 @@ const ContactMap = () => {
                 <div className='flex flex-row items-center gap-2 w-[100px]'>
                   <img src={icons.restaurant} alt='restaurant-icon' />
                   <p className='font-montserrat-normal locations-text text-secondary-dark'>
-                    200 m
+                    50 m
                   </p>
                 </div>
                 <div className='flex flex-row items-center gap-2 w-[100px]'>

@@ -15,7 +15,9 @@ function AnimatedRoutes() {
 
   // Fix for framer-motion route animation bugs
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (!location.state || !location.state.preventScroll) {
+      window.scrollTo(0, 0);
+    }
   }, [location.pathname]);
 
   return (

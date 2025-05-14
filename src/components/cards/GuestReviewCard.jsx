@@ -57,12 +57,12 @@ const GuestReviewCard = ({ userReview }) => {
           </div>
         </div>
       </div>
-      {isModalOpen && (
-        <GuestReviewModal
-          userReview={userReview}
-          setIsModalOpen={setIsModalOpen}
-        />
-      )}
+
+      <GuestReviewModal
+        userReview={userReview}
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+      />
     </>
   );
 };

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { GoChevronLeft, GoChevronRight } from 'react-icons/go';
 
 import '../styles/ApartmentPage.css';
 import icons from '../constants/icons';
@@ -10,8 +11,23 @@ import PageFirstSectionLayout from '../components/layout/PageFirstSectionLayout'
 
 const Apartment = () => {
   const [room, setRoom] = useState(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [showArrows, setShowArrows] = useState(false);
+
   const { slug } = useParams();
   const { t } = useTranslation();
+
+  const handleChangeImage = (direction) => {
+    if (direction === 'left') {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === 0 ? room.images.length - 1 : prevIndex - 1
+      );
+    } else {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === room.images.length - 1 ? 0 : prevIndex + 1
+      );
+    }
+  };
 
   useEffect(() => {
     if (slug) {
@@ -29,13 +45,43 @@ const Apartment = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              viewport={{ once: true, amount: 0.2 }}
               className='bg-white rounded-[25px] p-[25px]'
             >
               {/* DEKSTOP */}
               <div className='hidden lg:flex gap-[25px]'>
                 <div className='flex-1'>
-                  <img src={room?.headerImg} className='rounded-[10px] ' />
+                  {/* Image slider */}
+                  <div className='relative w-full h-full'>
+                    <button
+                      className={`${
+                        showArrows ? 'absolute' : 'hidden'
+                      } top-[50%] left-0 transform transition-all duration-300 -translate-y-1/2`}
+                      onMouseEnter={() => setShowArrows(true)}
+                      onMouseLeave={() => setShowArrows(false)}
+                      onClick={() => handleChangeImage('left')}
+                    >
+                      <GoChevronLeft size={48} color={'#f5f5f5'} />
+                    </button>
+
+                    <img
+                      src={room.images[currentImageIndex].src}
+                      alt={room.images[currentImageIndex].alt}
+                      className='h-full object-cover rounded-[10px]'
+                      onMouseEnter={() => setShowArrows(true)}
+                      onMouseLeave={() => setShowArrows(false)}
+                    />
+
+                    <button
+                      className={`${
+                        showArrows ? 'absolute' : 'hidden'
+                      } top-[50%] right-0 transform -translate-y-1/2`}
+                      onMouseEnter={() => setShowArrows(true)}
+                      onMouseLeave={() => setShowArrows(false)}
+                      onClick={() => handleChangeImage('right')}
+                    >
+                      <GoChevronRight size={48} color={'#f5f5f5'} />
+                    </button>
+                  </div>
                 </div>
                 <div className='flex-1'>
                   <h1 className='apartment_heading font-montserrat-bold text-primary-dark'>
@@ -126,7 +172,7 @@ const Apartment = () => {
 
               {/* MOBILE */}
               <div className='flex flex-col lg:hidden'>
-                <h1 className='heading font-montserrat-bold text-primary-dark'>
+                <h1 className='apartment_heading font-montserrat-bold text-primary-dark'>
                   {t(room.titleKey)}
                 </h1>
                 <div className='flex flex-wrap gap-[25px] mt-[25px]'>
@@ -172,10 +218,27 @@ const Apartment = () => {
                   )}
                 </div>
 
-                <img
-                  src={room?.headerImg}
-                  className='rounded-[10px] mt-[25px]'
-                />
+                <div className='relative mt-[25px]'>
+                  <button
+                    className={`absolute top-[50%] left-0 transform transition-all duration-300 -translate-y-1/2`}
+                    onClick={() => handleChangeImage('left')}
+                  >
+                    <GoChevronLeft size={36} color={'#f5f5f5'} />
+                  </button>
+
+                  <img
+                    src={room.images[currentImageIndex].src}
+                    alt={room.images[currentImageIndex].alt}
+                    className='rounded-[10px]'
+                  />
+
+                  <button
+                    className={`absolute top-[50%] right-0 transform -translate-y-1/2`}
+                    onClick={() => handleChangeImage('right')}
+                  >
+                    <GoChevronRight size={36} color={'#f5f5f5'} />
+                  </button>
+                </div>
 
                 <p className='facility_text mt-[25px]'>
                   <span className='font-montserrat-semibold'>

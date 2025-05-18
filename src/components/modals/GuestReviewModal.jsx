@@ -3,10 +3,17 @@ import { GrClose } from 'react-icons/gr';
 
 import Stars from '../cards/Stars';
 
-const GuestReviewModal = ({ userReview, isModalOpen, setIsModalOpen }) => {
-  const handleClose = (e) => {
-    e.preventDefault();
+const GuestReviewModal = ({
+  userReview,
+  isModalOpen,
+  setIsModalOpen,
+  onAfterClose,
+}) => {
+  const handleClose = () => {
     setIsModalOpen(false);
+    if (onAfterClose) {
+      onAfterClose();
+    }
   };
 
   return (

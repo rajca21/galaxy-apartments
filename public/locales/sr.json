@@ -159,5 +159,11 @@
     "view": "Pogled",
     "kitchen": "Kuhinja",
     "balcony": "Terasa"
+  },
+
+  "not_found": {
+    "title": "Stranica nije pronađena",
+    "title_apt": "Apartman nije pronađen",
+    "button": "Povratak"
   }
 }

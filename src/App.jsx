@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import Apartments from './pages/Apartments';
 import Apartment from './pages/Apartment';
 import AboutUs from './pages/AboutUs';
+import NotFound from './pages/NotFound';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -60,6 +61,14 @@ function AnimatedRoutes() {
           element={
             <Layout>
               <AboutUs />
+            </Layout>
+          }
+        />
+        <Route
+          path='*'
+          element={
+            <Layout>
+              <NotFound />
             </Layout>
           }
         />

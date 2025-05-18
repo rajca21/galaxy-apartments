@@ -160,5 +160,11 @@
     "view": "View",
     "kitchen": "Kitchen",
     "balcony": "Balcony"
+  },
+
+  "not_found": {
+    "title": "Page not found",
+    "title_apt": "Apartment not found",
+    "button": "Go back"
   }
 }

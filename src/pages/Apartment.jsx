@@ -8,6 +8,7 @@ import '../styles/ApartmentPage.css';
 import icons from '../constants/icons';
 import { roomsArray } from '../utils/data';
 import PageFirstSectionLayout from '../components/layout/PageFirstSectionLayout';
+import NotFoundLayout from '../components/layout/NotFoundLayout';
 
 const Apartment = () => {
   const [room, setRoom] = useState(null);
@@ -256,7 +257,9 @@ const Apartment = () => {
           </PageFirstSectionLayout>
         </>
       ) : (
-        <></>
+        <>
+          <NotFoundLayout from={'apartments'} />
+        </>
       )}
     </>
   );

@@ -9,6 +9,7 @@ const GuestReviewCard = ({ userReview }) => {
   const [isClamped, setIsClamped] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const pRef = useRef(null);
+  const triggerDivRef = useRef(null);
 
   useEffect(() => {
     const el = pRef.current;
@@ -25,8 +26,16 @@ const GuestReviewCard = ({ userReview }) => {
           <div className='flex flex-col items-center w-full rounded-[10px] bg-gray-text'>
             <div className='border-white border-4 -mt-[45px] rounded-full'>
               <img
-                src={images.booking_pink}
-                alt='booking_pink_logo'
+                src={
+                  userReview.sex === 'male'
+                    ? images.male_placeholder
+                    : images.female_placeholder
+                }
+                alt={
+                  userReview.sex === 'male'
+                    ? 'male purple profile placeholder'
+                    : 'female purple profile placeholder'
+                }
                 className='size-[90px] rounded-full'
               />
             </div>
@@ -37,6 +46,8 @@ const GuestReviewCard = ({ userReview }) => {
 
             <div
               className='h-[125px]'
+              ref={triggerDivRef}
+              tabIndex={-1}
               onClick={() => isClamped && setIsModalOpen(true)}
             >
               <p
@@ -58,11 +69,18 @@ const GuestReviewCard = ({ userReview }) => {
         </div>
       </div>
 
-      <GuestReviewModal
-        userReview={userReview}
-        isModalOpen={isModalOpen}
-        setIsModalOpen={setIsModalOpen}
-      />
+      {isModalOpen && (
+        <GuestReviewModal
+          userReview={userReview}
+          isModalOpen={isModalOpen}
+          setIsModalOpen={setIsModalOpen}
+          onAfterClose={() => {
+            if (triggerDivRef.current) {
+              triggerDivRef.current.focus();
+            }
+          }}
+        />
+      )}
     </>
   );
 };

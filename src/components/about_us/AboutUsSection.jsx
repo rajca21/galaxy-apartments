@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import '../../styles/AboutUsSection.css';
 import images from '../../constants/images';
 import SectionLayout from '../layout/SectionLayout';
+import rooms from '../../constants/rooms';
 
 const AboutUsSection = () => {
   const { t } = useTranslation();
@@ -34,7 +35,11 @@ const AboutUsSection = () => {
             className='flex-1 w-full flex justify-end'
           >
             <div className='flex relative w-full'>
-              <img src={images.about_us1} alt='bedroom' className='w-full' />
+              <img
+                src={rooms.jacuzzi_sub_2}
+                alt='bedroom'
+                className='w-full rounded-[25px]'
+              />
             </div>
           </motion.div>
         </div>
@@ -49,7 +54,11 @@ const AboutUsSection = () => {
             className='flex-1 w-full flex justify-end order-2 lg:order-1'
           >
             <div className='flex relative w-full'>
-              <img src={images.about_us2} alt='hallway' className='w-full' />
+              <img
+                src={images.about_us2}
+                alt='hallway'
+                className='w-full rounded-[25px]'
+              />
             </div>
           </motion.div>
           <motion.div
@@ -95,7 +104,11 @@ const AboutUsSection = () => {
             className='flex-1 w-full flex justify-end'
           >
             <div className='flex relative w-full'>
-              <img src={images.about_us3} alt='parking' className='w-full' />
+              <img
+                src={images.about_us3}
+                alt='parking'
+                className='w-full rounded-[25px]'
+              />
             </div>
           </motion.div>
         </div>

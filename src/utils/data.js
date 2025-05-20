@@ -184,10 +184,6 @@ export const roomsArray = [
         alt: 'triple studio apartment kitchen',
       },
       {
-        src: rooms.triple_apt_sub_2,
-        alt: 'triple studio apartment entrance',
-      },
-      {
         src: rooms.deluxe_room_sub_5,
         alt: 'triple studio apartment shower and toilet',
       },

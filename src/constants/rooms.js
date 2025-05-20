@@ -35,7 +35,6 @@ import standard_room_sub_3 from '../assets/rooms/standard_room_sub/standard_room
 import standard_studio_apt from '../assets/rooms/standard_studio_apt.png';
 import triple_apt from '../assets/rooms/triple_apt.png';
 import triple_apt_sub_1 from '../assets/rooms/triple_apt_sub/triple_apt_sub_1.png';
-import triple_apt_sub_2 from '../assets/rooms/triple_apt_sub/triple_apt_sub_2.png';
 
 export default {
   deluxe_family,
@@ -75,5 +74,4 @@ export default {
   standard_studio_apt,
   triple_apt,
   triple_apt_sub_1,
-  triple_apt_sub_2,
 };

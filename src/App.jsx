@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 import AutoScrollToTop from './components/buttons/AutoScrollToTop';
 import Layout from './components/layout/Layout';
@@ -83,6 +84,7 @@ function App() {
       <AutoScrollToTop />
       <AnimatedRoutes />
       <Analytics />
+      <SpeedInsights />
     </BrowserRouter>
   );
 }

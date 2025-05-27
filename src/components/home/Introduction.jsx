@@ -41,6 +41,9 @@ const Counter = ({ value }) => {
 const Introduction = () => {
   const { t } = useTranslation();
 
+  const numberOfReviews = import.meta.env.VITE_NUMBER_OF_REVIEWS * 1 || 984;
+  const rating = import.meta.env.VITE_RATING * 1 || 9.2;
+
   return (
     <>
       <SectionLayout bgColor={'bg-gray-nav'}>
@@ -79,13 +82,13 @@ const Introduction = () => {
               <div className='hidden xl:flex absolute bg-primary w-[250px] h-[100px] bottom-16 -left-10'>
                 <div className='w-full h-full flex flex-row justify-between items-center'>
                   <div className='flex flex-col w-full h-full justify-center items-center flex-1'>
-                    <Counter value={984} />
+                    <Counter value={numberOfReviews} />
                     <span className='font-montserrat-light text-white review-text'>
                       {t('intro_reviews')}
                     </span>
                   </div>
                   <div className='flex flex-col justify-center items-center flex-1'>
-                    <Counter value={9.2} />
+                    <Counter value={rating} />
                     <span className='font-montserrat-light text-white review-text'>
                       {t('intro_rating')}
                     </span>

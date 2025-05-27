@@ -1,12 +1,54 @@
-# React + Vite
+# Galaxy Apartments
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🌐 https://galaxy.apartments
 
-Currently, two official plugins are available:
+## 📌 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A modern apartment rental website built for a client in Belgrade, Serbia. Features property listings, guest reviews, and SEO/social media optimization.
 
-## Expanding the ESLint configuration
+## 🛠️ Key Features:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ Responsive Design – Works on mobile, tablet, and desktop.
+✅ SEO Optimized – Proper meta tags, Open Graph, and Twitter Cards.
+✅ Social Media Previews – Custom images for WhatsApp, Facebook, and Telegram.
+✅ Progressive Web App (PWA) – Installable with offline support.
+
+## 🚀 Installation & Setup
+
+### Prerequisites
+
+Node.js (v18+)
+npm / yarn
+
+### Clone the repo
+
+```bash
+git clone https://github.com/yourusername/galaxy-apartments.git
+cd galaxy-apartments
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+### Build for production
+
+```bash
+npm run build
+```
+
+## 📬 Contact
+
+- Nikola Raičević - Developer
+  📧 2nikolar1@gmail.com
+
+- Anđela Jovanović - UI/UX
+  📧 andjelaj2607@gmail.rs

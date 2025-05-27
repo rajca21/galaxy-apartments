@@ -9,7 +9,7 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'en',
-    debug: true, // Set to false in production
+    debug: false,
     interpolation: { escapeValue: false },
     detection: { order: ['querystring', 'localStorage', 'navigator'] },
     backend: {

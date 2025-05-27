@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 
 import AutoScrollToTop from './components/buttons/AutoScrollToTop';
 import Layout from './components/layout/Layout';
@@ -14,7 +15,6 @@ import NotFound from './pages/NotFound';
 function AnimatedRoutes() {
   const location = useLocation();
 
-  // Fix for framer-motion route animation bugs
   useEffect(() => {
     if (!location.state || !location.state.preventScroll) {
       window.scrollTo(0, 0);
@@ -82,6 +82,7 @@ function App() {
     <BrowserRouter>
       <AutoScrollToTop />
       <AnimatedRoutes />
+      <Analytics />
     </BrowserRouter>
   );
 }

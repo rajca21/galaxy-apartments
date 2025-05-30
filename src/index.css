@@ -1,53 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import './styles/utility_styles/critical.css';
+@import './styles/utility_styles/fonts.css' layer(utilities);
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.font-montserrat-light {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.font-montserrat-normal {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.font-montserrat-medium {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.font-montserrat-semibold {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.font-montserrat-bold {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.playfair-display-semibold {
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.playfair-display-bold {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  font-style: normal;
-}

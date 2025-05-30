@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { IoStarSharp } from 'react-icons/io5';
 
-import '../../styles/Hero.css';
 import slider from '../../constants/slider';
 
 const sliderImages = [

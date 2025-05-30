@@ -4,7 +4,6 @@ import { Dropdown } from 'flowbite-react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 
-import '../../styles/Navbar.css';
 import icons from '../../constants/icons';
 import {
   mobileMenuItemVariants,

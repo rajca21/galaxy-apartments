@@ -109,10 +109,16 @@ const Navbar = () => {
         <div className='relative lgxl:hidden h-full'>
           <div className='flex items-center justify-between mx-[20px] sm:mx-[40px] h-full'>
             <Dropdown
-              label=''
+              label='language'
               dismissOnClick={true}
-              renderTrigger={() => (
-                <div className='w-10 flex justify-start cursor-pointer'>
+              renderTrigger={(props) => (
+                <div
+                  className='w-10 flex justify-start cursor-pointer'
+                  role='button'
+                  aria-haspopup='menu'
+                  aria-expanded={props.isOpen}
+                  tabIndex='0'
+                >
                   <img
                     src={icons.language}
                     alt='language-icon'

@@ -28,31 +28,59 @@ const Hero = () => {
   const { t } = useTranslation();
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isFirstImageLoaded, setIsFirstImageLoaded] = useState(false);
+  const [startAnimation, setStartAnimation] = useState(false);
+
+  useEffect(() => {
+    if (isFirstImageLoaded) {
+      const timer = setTimeout(() => {
+        setStartAnimation(true);
+      }, 1000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [isFirstImageLoaded]);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderImages.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [startAnimation]);
 
   return (
     <div className='relative w-full h-[calc(100vh-80px)] overflow-hidden'>
       {/* SliderImages */}
-      <AnimatePresence>
-        <motion.img
-          key={sliderImages[currentIndex]}
-          src={sliderImages[currentIndex]}
-          srcSet={`${mediumSliderImages[currentIndex]} 1280w, ${sliderImages[currentIndex]} 1920w`}
+
+      {!startAnimation && (
+        <img
+          src={sliderImages[0]}
+          srcSet={`${mediumSliderImages[0]} 1280w, ${sliderImages[0]} 1920w`}
           sizes='(max-width: 1280px) 100vw, 1920px'
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
           className='absolute inset-0 w-full h-full object-cover'
-          alt='apartment'
+          alt='apartment1'
+          fetchPriority='high'
+          loading='eager'
+          onLoad={() => setIsFirstImageLoaded(true)}
         />
-      </AnimatePresence>
+      )}
+
+      {startAnimation && (
+        <AnimatePresence>
+          <motion.img
+            key={sliderImages[currentIndex]}
+            src={sliderImages[currentIndex]}
+            srcSet={`${mediumSliderImages[currentIndex]} 1280w, ${sliderImages[currentIndex]} 1920w`}
+            sizes='(max-width: 1280px) 100vw, 1920px'
+            initial={{ opacity: currentIndex === 0 ? 1 : 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+            className='absolute inset-0 w-full h-full object-cover'
+            alt={`apartment${currentIndex + 1}`}
+          />
+        </AnimatePresence>
+      )}
 
       {/* Overlay */}
       <motion.div
